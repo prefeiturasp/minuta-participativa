@@ -15,14 +15,6 @@
     <link href="<?php bloginfo('stylesheet_url'); ?>"
           rel="stylesheet" type="text/css" media="all" />
     <?php wp_enqueue_script('jquery'); ?>
-    <script type="text/javascript">
-      $(function(){
-      // FIXME: wrong image url in src attribute
-      var seta = '<img src="images/seta.png" alt="Elemento gráfico" class="seta" />';
-      $('.select').append( seta );
-      });
-    </script>
-
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
     <?php wp_head(); ?>
   </head>

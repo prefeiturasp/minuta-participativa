@@ -23,6 +23,9 @@
       <a href="<?php bloginfo('url')?>/?pid=<?php /*<*/ echo $post->ID;?>">
         <?php the_title(); ?>
       </a>
+      <?php if ($selected != ''): ?>
+      <span class="seta"></span>
+      <?php endif; ?>
     </h3>
     <p class="date"><?php the_time('d/m/Y')?></p>
     <p>
