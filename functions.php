@@ -11,6 +11,12 @@ if ( function_exists('register_sidebar') ) {
 	));
 }
 
+/* -- global vars used in our theme -- */
+
+/* Holds the current post being shown at index.php and page.php */
 $current_post = null;
+
+/* Number of comments shown in the right bar */
+$rightcolumn_max_comments = 5;
 
 ?>
