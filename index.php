@@ -22,9 +22,20 @@
 
           <?php the_content('<p class="serif">Leia mais &raquo;</p>'); ?>
 
-          <a href="#" title="Exibir comentários" class="lerComentarios">
-            ler comentários
+          <a href="<?php the_permalink() ?>#comments"
+             title="Exibir comentários" class="lerComentarios">
+            Ler comentários
           </a>
+
+          <p class="postmetadata">
+            <?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in
+            <?php the_category(', ') ?> |
+            <?php edit_post_link('Edit', '', ' | '); ?>
+            <?php comments_popup_link('No Comments &#187;',
+                                      '1 Comment &#187;',
+                                      '% Comments &#187;'); ?>
+          </p>
+
         </div><!--fim .post-->
 
         <?php else : ?>
@@ -37,7 +48,8 @@
         </div>
 
         <?php endif; ?>
-        <?php include('commentlist.php') ?>
+
+        <?php get_sidebar(); ?>
       </div><!--fim #content-->
 
 <?php get_footer(); ?>
