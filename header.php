@@ -19,7 +19,7 @@
     <?php wp_head(); ?>
     <?php global $BODY_CLASS; ?>
   </head>
-  <body id="home" <?php body_class($BODY_CLASS); ?>>
+  <body <?php body_class($BODY_CLASS); ?>>
     <div id="acessibilidade" tabindex="1">
       <ul>
         <li><a href="#menu">Ir para o menu</a></li>
