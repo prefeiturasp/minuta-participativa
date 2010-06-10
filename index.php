@@ -48,8 +48,9 @@
         </div>
 
         <?php endif; ?>
-
+		<div id="widgets">
         <?php get_sidebar(); ?>
+		</div>
       </div><!--fim #content-->
 
 <?php get_footer(); ?>
