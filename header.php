@@ -41,5 +41,8 @@
             </a>
           </li>
           <?php wp_list_pages('title_li=&depth=1'); ?>
+			<li>
+				<?php get_search_form(); ?>
+			</li>
         </ul>
       </div><!--fim header-->
