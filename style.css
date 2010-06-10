@@ -59,7 +59,7 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 
 /* COMENTÁRIOS
 --------------------------------------------- */
-#comments{width:38.087%;}
+#comments{width:38.087%; float:left;}
 #widgets{width:19.043%; padding:0px 0px 12px 0px; float:left;}
 #comments #navegaComments, #sidebar{border:1px dotted #eef1ee; background-color:#ddedf0;margin-bottom:1px; padding:10px; overflow:auto;}
 #comments #navegaComments h3, #comments #navegaComments form label{ display:none;}
@@ -88,5 +88,5 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 
 /* RODAPE
 --------------------------------------------- */
-#footer{background-color:#f57900; width:100%; height:4px; clear:both;}
+#footer{background-color:#3797a5; width:100%; height:4px; clear:both;}
 
