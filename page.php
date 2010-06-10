@@ -1,34 +1,18 @@
 <?php get_header(); ?>
 
 <div id="content">
-  <?php include('preview.php'); ?>
-        <?php
-           if ($current_post != null):
-             global $post;
-             $post = $current_post;
-             setup_postdata ($post);
-         ?>
 
-        <div class="post">
-          <span class="title">Blog</span>
-          <ul class="navegaPost">
-            <li><?php previous_post_link('Anterior %link') ?></li>
-            <li><?php next_post_link('%link Próximo') ?></li>
-          </ul>
-          <h2>
-            <?php the_title(); ?>
-          </h2>
-          <p class="date"><?php the_time('d/m/Y')?></p>
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  <div class="post">
+    <h2><?php the_title(); ?></h2>
+    <p class="date"><?php the_time('d/m/Y')?></p>
+    <?php the_content('<p class="serif">Leia mais &raquo;</p>'); ?>
+    <?php wp_link_pages(array('before'         => '<p><strong>Pages:</strong> ',
+                              'after'          => '</p>',
+                              'next_or_number' => 'number')); ?>
+  </div><!-- fim .post -->
+  <?php endwhile; endif; ?>
 
-          <?php the_content('<p class="serif">Leia mais &raquo;</p>'); ?>
-
-          <a href="#" title="Exibir comentários" class="lerComentarios">
-            ler comentários
-          </a>
-        </div><!--fim .post-->
-
-        <?php endif; ?>
-        <?php include('commentlist.php') ?>
-      </div><!--fim #content-->
+</div><!-- fim #content -->
 
 <?php get_footer(); ?>
