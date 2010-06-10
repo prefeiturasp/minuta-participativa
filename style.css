@@ -59,12 +59,12 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 /* COMENTÁRIOS
 --------------------------------------------- */
 #comments, #widgets{width:38.087%; padding:0px 0px 12px 0px; float:left;}
-#comments #navegaComments{border:1px dotted #eef1ee; background-color:#ddedf0;margin-bottom:1px; padding:10px; overflow:auto;}
+#comments #navegaComments, #sidebar{border:1px dotted #eef1ee; background-color:#ddedf0;margin-bottom:1px; padding:10px; overflow:auto;}
 #comments #navegaComments h3, #comments #navegaComments form label{ display:none;}
 #comments #navegaComments ol{ width:240px; float:left;}
 #comments #navegaComments ol li{ display:inline; font-size:1.15em;}
-#comments #navegaComments form{ width:192px; float:right;}
-#comments #navegaComments form input{border:1px solid #e5e7e5; color:#abbfab; width:188px; height:23px;}
+#comments #navegaComments form, #searchform{ width:192px; float:right;}
+#comments #navegaComments form input, #searchform input{border:1px solid #e5e7e5; color:#abbfab; width:188px; height:px;}
 
 #comments .comment{ border:1px dotted #fff; background-color:#ddedf0; padding: 10px; margin-bottom:10px;}
 #comments .comment .comment{ margin-left:20px; border:none;padding:27px 0px 0px 0px;}

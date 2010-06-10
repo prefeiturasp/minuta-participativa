@@ -49,7 +49,7 @@
 
         <?php endif; ?>
 		<div id="widgets">
-        <?php get_sidebar(); ?>
+        	<?php get_sidebar(); ?>
 		</div>
       </div><!--fim #content-->
 
