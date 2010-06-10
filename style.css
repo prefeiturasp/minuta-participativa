@@ -10,7 +10,7 @@ Author URI: http://xemele.cultura.gov.br
 @charset "utf-8";
 
 *{margin:0px; padding:0px; border:none; vertical-align:baseline;}
-body{background:#fff; font-size:75%; font-family: Times New Roman, Serif; color: #474947;}
+body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-serif; color: #474947;}
 
 #acessibilidade{display:none;}
 #container{min-width:1020px; max-width:1276px; margin:0 auto;}
@@ -21,8 +21,8 @@ body{background:#fff; font-size:75%; font-family: Times New Roman, Serif; color:
 #header h1 {}
 #header h1 a{background: url("images/logo_direitoAutoral.png") no-repeat 0 0; width:287px; height:153px; margin-left:104px; text-indent:-9999px; overflow:hidden; display:block;}
 
-#menu{background-color: #3797a5; border-top:1px solid #fff; padding-left:40px;}
-#menu li{display:inline-block; font-family: Arial, "MS Trebuchet", sans-serif; padding:8px 35px 8px 0px;}
+#menu{background-color: #3797a5; border-top:1px solid #fff; clear:both; padding:8px 0px 8px 40px;}
+#menu li{display:inline; font-family: Arial, "MS Trebuchet", sans-serif; padding:8px 35px 8px 0px;}
 #menu li a{color:#fff; font-weight: bold; text-transform: uppercase; text-decoration: none; padding:8px 0px 8px 0px;}
 #menu li a:hover{text-decoration: underline;}
 
@@ -33,7 +33,7 @@ body{background:#fff; font-size:75%; font-family: Times New Roman, Serif; color:
 /* LISTA POSTS
 --------------------------------------------- */
 
-#preview{width:21.159%; margin:0px 10px 0px 35px; float:left;}
+#preview{width:21.159%; margin:0px 10px 0px 35px; float:left; display:inline;}
 
 #preview .preview-post{padding:20px 10px 10px 10px; position:relative;}
 #preview .preview-post.select{background-color:#cae4e7; border:1px solid #d2d8d2;}
@@ -49,11 +49,11 @@ body{background:#fff; font-size:75%; font-family: Times New Roman, Serif; color:
 
 .consulta .post, .blog .post{background-color:#ddedf0; border:1px dotted #dddedd; width:31.818%; margin-right:10px; padding:7px 12px 21px 12px; position:relative; float:left;}
 .page .post{background-color:#ddedf0; border:1px dotted #dddedd; width:53.761%; margin-right:10px; padding:7px 12px 21px 12px; margin-left:35px; position:relative; float:left;}
-.post .title{font-size:3.15em; text-transform: uppercase; color:#e1e7df;}
+.post .title{font-size:3.15em; text-transform: uppercase; color:#3797a5;}
 .post p{ margin-bottom:15px; text-align:justify;}
 .post h2{}
-.post .navegaPost li{display:inline-block;}
-.consulta .post .lerComentarios{background:#fff url("../images/setaComentarios.png") no-repeat center right; color:#c8a479; text-decoration: none; padding:1px 13px 2px 3px; position:absolute; right:-1px; top:7px;}
+.post .navegaPost li{display:inline;}
+.consulta .post .lerComentarios{background:#fff url("../images/setaComentarios.png") no-repeat center right; color:#c8a479; text-decoration: none; padding:0px 13px 2px 3px; position:absolute; right:-1px; top:7px;}
 .post .lerComentarios:hover{text-decoration: underline;}
 
 /* COMENTÁRIOS
