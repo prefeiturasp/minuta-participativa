@@ -72,9 +72,6 @@
 					<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
 					<li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
 					<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
-					<?php $current_site = get_current_site(); ?>
-					<li><a href="http://<?php echo $current_site->domain . $current_site->path ?>wp-signup.php" title="Create a new blog">New Blog</a></li>
-					<li><a href="http://<?php echo $current_site->domain . $current_site->path ?>" title="<?php echo $current_site->site_name ?>"><?php echo $current_site->site_name ?></a></li>
 					<?php wp_meta(); ?>
 				</ul>
 				</li>
