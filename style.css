@@ -58,7 +58,7 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 
 /* COMENTÁRIOS
 --------------------------------------------- */
-#comments, #widgets, #sidebar{width:38.087%; padding:0px 0px 12px 0px; float:left;}
+#comments, #widgets{width:38.087%; padding:0px 0px 12px 0px; float:left;}
 #comments #navegaComments{border:1px dotted #eef1ee; background-color:#ddedf0;margin-bottom:1px; padding:10px; overflow:auto;}
 #comments #navegaComments h3, #comments #navegaComments form label{ display:none;}
 #comments #navegaComments ol{ width:240px; float:left;}
