@@ -9,7 +9,7 @@ Author URI: http://xemele.cultura.gov.br
 
 @charset "utf-8";
 
-*{margin:0px; padding:0px; border:none; vertical-align:baseline;}
+*{margin:0px; padding:0px; border:none; vertical-align:baseline; list-style-type:none;}
 body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-serif; color: #474947;}
 
 #acessibilidade{display:none;}
@@ -53,12 +53,12 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 .post p{ margin-bottom:15px; text-align:justify;}
 .post h2{}
 .post .navegaPost li{display:inline;}
-.consulta .post .lerComentarios{background:#fff url("../images/setaComentarios.png") no-repeat center right; color:#c8a479; text-decoration: none; padding:0px 13px 2px 3px; position:absolute; right:-1px; top:7px;}
+.consulta .post .lerComentarios{background:#fff url("images/setaComentarios.png") no-repeat center right; color:#c8a479; text-decoration: none; padding:0px 13px 2px 3px; position:absolute; right:-1px; top:7px;}
 .post .lerComentarios:hover{text-decoration: underline;}
 
 /* COMENTÁRIOS
 --------------------------------------------- */
-#comments, #widgets{width:38.087%; padding:0px 0px 12px 0px; float:left;}
+#comments, #widgets, #sidebar{width:38.087%; padding:0px 0px 12px 0px; float:left;}
 #comments #navegaComments{border:1px dotted #eef1ee; background-color:#ddedf0;margin-bottom:1px; padding:10px; overflow:auto;}
 #comments #navegaComments h3, #comments #navegaComments form label{ display:none;}
 #comments #navegaComments ol{ width:240px; float:left;}
