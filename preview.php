@@ -3,21 +3,36 @@
 
      global $current_post;
 
+     /* Number of posts to be listed */
+     $maxposts = 5;
+
+     /* From which post the listing should start (helper for the
+      * pagination) */
+     $offset = 0;
+
+     /* Query that will return posts */
+     $category = get_cat_ID("Blog");
+     $allposts = get_posts("numberposts=$maxposts&" .
+                           "category=$category&" .
+                           "offset=$offset");
+
+     /* Using this `pid' flag to avoid clashing with `p' var that
+      * leads the user to the `single.php' page. */
      if (isset($_GET['pid'])) {
        $current_post = get_post($_GET['pid']);
-     } else if (isset($post)) {
-       $current_post = $post;
      } else {
-       $all = wp_get_recent_posts (1);
-       $current_post = get_post ($all[0]['ID']);
+       $current_post = get_post ($allposts[0]->ID);
      }
 
      $current_id = $current_post->ID;
-     if (have_posts()) : while (have_posts()) :
-       the_post();
+     foreach ($allposts as $post) :
+       /* Setting up post data to make the_*() functions work */
+       setup_postdata($post);
+
+       /* Defining if this post is the selected one */
        $selected = $current_id == $post->ID ? 'select' : '';
    ?>
-
+   
   <div class="preview-post <?php echo $selected; ?>">
     <h3>
       <a href="<?php bloginfo('url')?>/?pid=<?php /*<*/ echo $post->ID;?>">
@@ -29,11 +44,19 @@
     </h3>
     <p class="date"><?php the_time('d/m/Y')?></p>
     <p>
-      Integer bibendum mi id velit lobortis id venenatis elit
-      hendrerit. Pellentesque ut sapien ipsum. Praesent eu
-      vulputate nibh.
+      <?php
+        if ($post->post_excerpt)
+          $content = $post->post_excerpt;
+        else
+          $content = $post->post_content;
+        $excerpt = strip_tags($content);
+        if (strlen($excerpt) > 152) {
+          $excerpt = substr($excerpt, 0, 152) . '...';
+        }
+        echo $excerpt;
+      ?>
     </p>
   </div>
 
-  <?php endwhile; endif; ?>
+  <?php endforeach; ?>
 </div><!--fim #preview-->

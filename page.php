@@ -13,6 +13,8 @@
   </div><!-- fim .post -->
   <?php endwhile; endif; ?>
 
+  <?php get_sidebar(); ?>
+
 </div><!-- fim #content -->
 
 <?php get_footer(); ?>
