@@ -19,7 +19,8 @@
         </div><!--fim .post-->
         <?php endwhile; endif; ?>
 
-
-        <?php get_sidebar(); ?>
+		<div id="widgets">
+        	<?php get_sidebar(); ?>
+		</div>
 
 <?php get_footer(); ?>

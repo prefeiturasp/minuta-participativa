@@ -48,7 +48,7 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 --------------------------------------------- */
 
 .single .post, .consulta .post, .blog .post{background-color:#ddedf0; border:1px dotted #dddedd; width:31.818%; margin-right:10px; padding:7px 12px 21px 12px; position:relative; float:left;}
-.blog .post{width:50%;}
+.single .post, .blog .post{width:50%;}
 .page .post{background-color:#ddedf0; border:1px dotted #dddedd; width:53.761%; margin-right:10px; padding:7px 12px 21px 12px; margin-left:35px; position:relative; float:left;}
 .post .title{font-size:3.15em; text-transform: uppercase; color:#3797a5;}
 .post p{ margin-bottom:15px; text-align:justify;}

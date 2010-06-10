@@ -13,7 +13,9 @@
   </div><!-- fim .post -->
   <?php endwhile; endif; ?>
 
-  <?php get_sidebar(); ?>
+	<div id="widgets">
+  	<?php get_sidebar(); ?>
+	</div>
 
 </div><!-- fim #content -->
 
