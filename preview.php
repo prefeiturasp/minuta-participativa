@@ -11,18 +11,17 @@
      $offset = 0;
 
      /* Query that will return posts */
+     $category = get_cat_ID("Blog");
      $allposts = get_posts("numberposts=$maxposts&" .
-                           "category=Blog&" .
+                           "category=$category&" .
                            "offset=$offset");
 
      /* Using this `pid' flag to avoid clashing with `p' var that
       * leads the user to the `single.php' page. */
      if (isset($_GET['pid'])) {
        $current_post = get_post($_GET['pid']);
-     } else if (isset($post)) {
-       $current_post = $post;
      } else {
-       $current_post = get_post ($allposts[0]['ID']);
+       $current_post = get_post ($allposts[0]->ID);
      }
 
      $current_id = $current_post->ID;
