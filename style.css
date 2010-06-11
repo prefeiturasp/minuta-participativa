@@ -22,9 +22,13 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 #header h1 a{background: url("images/logo_direitoAutoral.png") no-repeat 0 0; width:287px; height:153px; margin-left:104px; text-indent:-9999px; overflow:hidden; display:block;}
 
 #menu{background-color: #3797a5; border-top:1px solid #fff; float left; padding:8px 0px 8px 40px;}
-#menu li{display:inline; font-family: Arial, "MS Trebuchet", sans-serif; padding-right:35px;}
+#menu li{display:inline; font-family: Arial, "MS Trebuchet", sans-serif; padding-right:35px; position:relative;}
 #menu li a{color:#fff; font-weight: bold; text-transform: uppercase; text-decoration: none; padding:8px 0px 8px 0px;}
 #menu li a:hover{text-decoration: underline;}
+
+.btCadastro a{background:url("images/logoCadastro.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:202px; height:90px; position:absolute; top:40px; right:100px;}
+/*.rss{background:url("images/iconRss.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:40px; height:40px; position:absolute; top:0px; bottom:15px;}*/
+
 
 /* CONTEUDO
 --------------------------------------------- */
@@ -88,6 +92,12 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 .post #comments {width:auto;}
 .post #comments .comment{ border:1px dotted #eef1ee; background-color:#fff; padding: 10px; margin-bottom:10px;}
 
+#commentform input{background-color:#fff; color:#3797a5; padding:4px 1px; border:1px solid #3797a5;}
+#commentform input:hover{ border:2px solid #3797a5; padding:3px 0px;}
+#commentform #comment{ width:100%; height:100px;  padding:4px 1px; border:1px solid #3797a5; font-size:15px;}
+#commentform #comment:hover{border:2px solid #3797a5; padding:3px 0px;}
+#commentform #submit{background-color:#fff; color:#3797a5; padding:3px 10px; border:1px solid #3797a5; font-weight:bold;}
+#commentform #submit:hover{padding:2px 9px; border:2px solid #3797a5; }
 #widgets{}
 
 /* RODAPE
