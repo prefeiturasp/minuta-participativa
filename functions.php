@@ -1,5 +1,7 @@
 <?php
 
+/* -- Wordpress default stuff -- */
+
 automatic_feed_links();
 
 if ( function_exists('register_sidebar') ) {
@@ -15,8 +17,5 @@ if ( function_exists('register_sidebar') ) {
 
 /* Holds the current post being shown at index.php and page.php */
 $current_post = null;
-
-/* Number of comments shown in the right bar */
-$rightcolumn_max_comments = 5;
 
 ?>
