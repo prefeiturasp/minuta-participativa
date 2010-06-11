@@ -3,9 +3,17 @@
 <?php get_header(); ?>
 
 <script type="text/javascript">
-var $ = jQuery;
-var blogUrl = "<?php bloginfo('url'); ?>";
-var templateUrl = "<?php bloginfo('template_url'); ?>";
+/* I hate to type jQuery all the time */
+$ = jQuery;
+
+/* Useful values when building urls, using PHP to generate them. */
+blogUrl = "<?php bloginfo('url'); ?>";
+templateUrl = "<?php bloginfo('template_url'); ?>";
+
+/* Paragraph that is currently loaded in the comments list. It starts
+ * empty and is filled by the `loadComments()' function. */
+loadedParagraph = null;
+
 
 function formatDate(date) {
     return date;
@@ -19,6 +27,13 @@ function loadComments(paragraphId, postId) {
     var query = '{"method":"get_paragraph_comments","params":[' +
         paragraphId + ',' + postId + ']}'
     var container = $('#commentContainer');
+
+    /* Testing if the paragraph asked to be loaded is already the
+     * current one, if it's not we set the loaded paragraph. */
+    if (loadedParagraph == paragraphId)
+        return;
+    else
+        loadedParagraph = paragraphId;
 
     /* Clearing up comment list */
     container.html(
