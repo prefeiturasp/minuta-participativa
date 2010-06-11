@@ -2,6 +2,81 @@
 
 <?php get_header(); ?>
 
+<script type="text/javascript">
+var $ = jQuery;
+var blogUrl = "<?php bloginfo('url'); ?>";
+var templateUrl = "<?php bloginfo('template_url'); ?>";
+
+function formatDate(date) {
+    return date;
+}
+
+function filterContent(content) {
+    return content;
+}
+
+function loadComments(paragraphId, postId) {
+    var query = '{"method":"get_paragraph_comments","params":[' +
+        paragraphId + ',' + postId + ']}'
+    var container = $('#commentContainer');
+
+    /* Clearing up comment list */
+    container.html(
+        '<li class="comment">' +
+        '<img src="' + templateUrl + '/images/loading.gif" />' +
+        '</li>');
+
+    /* Getting comment list */
+    $.getJSON(blogUrl, {dialogue_query:query}, function (comments) {
+        var i;
+        container.html('');
+
+        /* No comments yet */
+        if (comments.length == 0) {
+            container.html(
+                '<li class="comment">' +
+                'Não há propostas para o comentário selecionado.' +
+                '</li>');
+            return;
+        }
+
+        /* Building the html of the comment list */
+        for (i = 0; i < comments.length; i++) {
+            console.debug(comments[i]);
+            var obj = comments[i];
+            var infoUser = $('<div>')
+                .addClass('infoUser')
+                .append($('<span>')
+                        .addClass('date')
+                        .html(formatDate(obj.comment_date)))
+                .append($('<span>')
+                        .addClass('user')
+                        .html(obj.comment_author));
+            $('<li>')
+                .addClass('comment')
+                .append(infoUser)
+                .append($('<p>').html(filterContent(obj.comment_content)))
+                .appendTo(container);
+        }
+    });
+}
+
+$(document).ready(function () {
+    $('.comment-pp').click(function () {
+        var postId = $('input[name=comment_post_ID]', $(this)).val();
+        var paragraphId =
+            $('input[name=dialogue_comment_paragraph]', $(this)).val();
+        loadComments(paragraphId, postId);
+
+        /* marking selected paragraph as the active, comments of this
+         * `selected' paragraph are going to be shown in the right
+         * column. */
+        $('.comment-pp').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+</script>
+
 <div id="content">
   <?php
     query_posts('category_name=Consulta');
@@ -28,30 +103,7 @@
         <input type="text" name="busca nos comentários" />
       </form>
     </div><!--fim #navegaComments-->
-    <div class="comment">
-      <div class="infoUser">
-        <span class="date">27/10/2009</span>
-        <span class="user" >Severino Jose do Santos de Oliveira e Silva</span>
-      </div>
-      <p>
-        Nunc porttitor tincidunt magna, at rutrum lorem molestie
-        eu. Proin vitae magna elit. Etiam enim dui, vestibulum eu
-        vestibulum eget, egestas nec justo. Aenean at mi arcu, nec
-        egestas velit. Aenean vitae justo augue.
-      </p>
-    </div><!--fim .comment-->
-    <div class="comment">
-      <div class="infoUser">
-        <span class="date">27/10/2009</span>
-        <span class="user" >Severino Jose do Santos de Oliveira e Silva</span>
-      </div>
-      <p>
-        Nunc porttitor tincidunt magna, at rutrum lorem molestie
-        eu. Proin vitae magna elit. Etiam enim dui, vestibulum eu
-        vestibulum eget, egestas nec justo. Aenean at mi arcu, nec
-        egestas velit. Aenean vitae justo augue.
-      </p>
-    </div><!--fim .comment-->
+    <ul id="commentContainer"></ul>
   </div><!--fim #comments-->
 
 </div>

@@ -72,7 +72,11 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 #searchform ul li{float:left; padding-right:5px;}
 #searchform button{background-color:#fff; color:#3797a5; margin-top:-4px; height:20px; padding:0 10px;}
 
-#comments .comment{ border:1px dotted #fff; background-color:#ddedf0; padding: 10px; margin-bottom:10px;}
+#commentContainer{ border:1px dotted #fff; }
+#commentContainer .comment { padding: 10px; margin-bottom:10px; background-color:#ddedf0; }
+#commentContainer img { margin:0 auto; }
+
+.comment-pp.active { background-color:#gray; }
 #comments .comment .comment{ margin-left:20px; border:none;padding:27px 0px 0px 0px;}
 #comments .comment .infoUser img{width:34px height:34px; padding:0px 6px 6px 0px; float:left;}
 #comments .comment .infoUser .date{ font-size:0.80em;}
