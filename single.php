@@ -7,8 +7,8 @@
         <div class="post">
           <span class="title">Blog</span>
           <ul class="navegaPost">
-            <li><?php previous_post_link('Anterior %link') ?></li>
-            <li><?php next_post_link('%link Próximo') ?></li>
+            <li><?php previous_post_link('<< %link') ?></li>
+            <li><?php next_post_link('%link >>') ?></li>
           </ul>
           <h2><?php the_title(); ?></h2>
           <p class="date"><?php the_time('d/m/Y')?></p>
