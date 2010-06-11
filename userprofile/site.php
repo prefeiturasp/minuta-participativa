@@ -47,7 +47,7 @@
         }
       ?>
     </select>
-  </label> 
+  </label>
 </p>
 
 <p>
