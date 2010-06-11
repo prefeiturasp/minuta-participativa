@@ -81,9 +81,9 @@
 
 <!--<p><small><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></small></p>-->
 
-<p><textarea name="comment" id="comment" cols="39" rows="10" tabindex="4"></textarea></p>
+<p><textarea name="comment" id="comment"></textarea></p>
 
-<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<p><button name="submit" type="submit" id="submit" value="Enviar Comentário" >Enviar</button>
 <?php comment_id_fields(); ?>
 </p>
 <?php do_action('comment_form', $post->ID); ?>
