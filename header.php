@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <title><?php bloginfo('name'); ?></title>
+    <?php wp_enqueue_script('jquery'); ?>
+    <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+    <?php wp_head(); ?>
+    <?php global $BODY_CLASS; ?>
     <link rel="alternate" type="application/rss+xml"
           title="<?php bloginfo('name'); ?> RSS Feed"
           href="<?php bloginfo('rss2_url'); ?>" />
@@ -14,10 +18,6 @@
           href="<?php bloginfo('comments_rss2_url'); ?>" />
     <link href="<?php bloginfo('stylesheet_url'); ?>"
           rel="stylesheet" type="text/css" media="all" />
-    <?php wp_enqueue_script('jquery'); ?>
-    <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-    <?php wp_head(); ?>
-    <?php global $BODY_CLASS; ?>
   </head>
   <body <?php body_class($BODY_CLASS); ?>>
     <div id="acessibilidade" tabindex="1">
