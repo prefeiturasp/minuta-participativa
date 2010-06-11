@@ -11,14 +11,15 @@ Author URI: http://xemele.cultura.gov.br
 
 *{margin:0px; padding:0px; border:none; vertical-align:baseline; list-style-type:none;}
 body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-serif; color: #474947;}
-
+a{color:#3797a5; text-decoration:none;}
+a:hover{text-decoration:underline;}
 #acessibilidade{display:none;}
 #container{min-width:1020px; max-width:1276px; margin:0 auto;}
 
 /* HEADER
 --------------------------------------------- */
 #header{background: url("images/back.png") repeat 0 0;}
-#header h1 {}
+#header h1{}
 #header h1 a{background: url("images/logo_direitoAutoral.png") no-repeat 0 0; width:287px; height:153px; margin-left:104px; text-indent:-9999px; overflow:hidden; display:block;}
 
 #menu{background-color: #3797a5; border-top:1px solid #fff; float left; padding:8px 0px 8px 40px;}
@@ -27,7 +28,8 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 #menu li a:hover{text-decoration: underline;}
 
 .btCadastro a{background:url("images/logoCadastro.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:202px; height:90px; position:absolute; top:40px; right:100px;}
-/*.rss{background:url("images/iconRss.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:40px; height:40px; position:absolute; top:0px; bottom:15px;}*/
+
+/*.rss{background:url("images/iconRss.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:inline-block; width:40px; height:40px; float:right; position:relative; right:0px;}*/
 
 
 /* CONTEUDO
@@ -41,7 +43,7 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 
 #preview .preview-post{padding:20px 10px 10px 10px; position:relative;}
 #preview .preview-post.select{background-color:#cae4e7; border:1px solid #d2d8d2;}
-#preview .preview-post .seta{ background: url("images/seta.png"); width:14px; height:19px; position:absolute; right:-1px; top:7px; z-index:100;}
+#preview .preview-post .seta{background: url("images/seta.png"); width:14px; height:19px; position:absolute; right:-1px; top:7px; z-index:100;}
 #preview .preview-post h3, #preview .preview-post h3 a{color:#000; margin-bottom:5px; font-family:Arial, "MS Trebuchet", sans-serif; font-weight:normal;}
 #preview .preview-post h3 a{text-decoration:none;}
 #preview .preview-post h3 a:hover{text-decoration:underline;}
@@ -67,30 +69,30 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 #widgets{width:19.043%; padding:0px 0px 12px 0px; float:left;}
 #comments #navegaComments, #sidebar{border:1px dotted #eef1ee; background-color:#ddedf0;margin-bottom:1px; padding:10px; overflow:auto;}
 #comments #navegaComments h3, #comments #navegaComments form label{ display:none;}
-#comments #navegaComments ol{ width:240px; float:left;}
-#comments #navegaComments ol li{ display:inline; font-size:1.15em;}
-#comments #navegaComments form{ width:192px; float:right;}
+#comments #navegaComments ol{width:240px; float:left;}
+#comments #navegaComments ol li{display:inline; font-size:1.15em;}
+#comments #navegaComments form{width:192px; float:right;}
 #comments #navegaComments form input, #searchform input{border:1px solid #e5e7e5; color:#abbfab; width:188px; height:20px; clear:both; margin-top:-4px;}
 
 #searchform {float:right; padding-right:35px;}
 #searchform ul li{float:left; padding-right:5px;}
 #searchform button{background-color:#fff; color:#3797a5; margin-top:-4px; height:20px; padding:0 10px;}
 
-#commentContainer{ border:1px dotted #fff; }
-#commentContainer .comment { padding: 10px; margin-bottom:10px; background-color:#ddedf0; }
+#commentContainer{border:1px dotted #fff; }
+#commentContainer .comment {padding: 10px; margin-bottom:10px; background-color:#ddedf0; }
 #commentContainer img { margin:0 auto; }
 
 .comment-pp.active { background-color:#gray; }
-#comments .comment .comment{ margin-left:20px; border:none;padding:27px 0px 0px 0px;}
+#comments .comment .comment{margin-left:20px; border:none; padding:27px 0px 0px 0px;}
 #comments .comment .infoUser img{width:34px height:34px; padding:0px 6px 6px 0px; float:left;}
 #comments .comment .infoUser .date{ font-size:0.80em;}
 #comments .comment .infoUser .user{display:block;}
-#comments .comment p{ clear:both; ; text-align:justify;}
+#comments .comment p{clear:both; text-align:justify;}
 #comments{}
 
 
-.post #comments {width:auto;}
-.post #comments .comment{ border:1px dotted #eef1ee; background-color:#fff; padding: 10px; margin-bottom:10px;}
+.post #comments{width:auto;}
+.post #comments .comment{border:1px dotted #eef1ee; background-color:#fff; padding: 10px; margin-bottom:10px;}
 
 #commentform input{background-color:#fff; color:#3797a5; padding:4px 1px; border:1px solid #3797a5;}
 #commentform input:hover{ border:2px solid #3797a5; padding:3px 0px;}
