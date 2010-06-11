@@ -22,9 +22,13 @@ body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-se
 #header h1 a{background: url("images/logo_direitoAutoral.png") no-repeat 0 0; width:287px; height:153px; margin-left:104px; text-indent:-9999px; overflow:hidden; display:block;}
 
 #menu{background-color: #3797a5; border-top:1px solid #fff; float left; padding:8px 0px 8px 40px;}
-#menu li{display:inline; font-family: Arial, "MS Trebuchet", sans-serif; padding-right:35px;}
+#menu li{display:inline; font-family: Arial, "MS Trebuchet", sans-serif; padding-right:35px; position:relative;}
 #menu li a{color:#fff; font-weight: bold; text-transform: uppercase; text-decoration: none; padding:8px 0px 8px 0px;}
 #menu li a:hover{text-decoration: underline;}
+
+.btCadastro a{background:url("images/logoCadastro.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:202px; height:90px; position:absolute; top:40px; right:100px;}
+/*.rss{background:url("images/iconRss.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:40px; height:40px; position:absolute; top:0px; bottom:15px;}*/
+
 
 /* CONTEUDO
 --------------------------------------------- */
