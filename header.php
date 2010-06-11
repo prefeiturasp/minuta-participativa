@@ -42,7 +42,7 @@
           </li>
           <?php wp_list_pages('title_li=&depth=1'); ?>
 			<li>
-				<a href="#" class="rss" title="">Feed</a> <?php get_search_form(); ?>
+				<?php get_search_form(); ?>
 			</li>
         </ul>
 		<span class="btCadastro"><a href="#" title="Para participar cadastre-se e leia os termos de uso">Cadastre-se</a></span>

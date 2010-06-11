@@ -49,6 +49,9 @@
 
         <?php endif; ?>
 		<div id="widgets">
+			<div id="sidebar2">
+				<p>me use</p>
+			</div>
         	<?php get_sidebar(); ?>
 		</div>
       </div><!--fim #content-->
