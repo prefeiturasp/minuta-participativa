@@ -23,13 +23,13 @@ a:hover{text-decoration:underline;}
 #header h1 a{background: url("images/logo_direitoAutoral.png") no-repeat 0 0; width:287px; height:153px; margin-left:104px; text-indent:-9999px; overflow:hidden; display:block;}
 
 #menu{background-color: #3797a5; border-top:1px solid #fff; float left; padding:8px 0px 8px 40px;}
-#menu li{display:inline; padding-right:35px; position:relative;}
+#menu li{display:inline; padding-right:35px;}
 #menu li a{color:#fff; font-weight: bold; text-transform: uppercase; text-decoration: none; padding:8px 0px 8px 0px;}
 #menu li a:hover{text-decoration: underline;}
 
 .btCadastro a{background:url("images/logoCadastro.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:202px; height:90px; position:absolute; top:40px; right:100px;}
 
-.rss{background:url("images/iconRss.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:inline-block; width:40px; height:40px; position:absolute; top:-8px; left:-40px; clear:both;}
+.rss{background:url("images/iconRss.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:40px;  position:absolute; top:-8px; left:-40px; clear:;}
 
 
 /* CONTEUDO
@@ -78,7 +78,7 @@ a:hover{text-decoration:underline;}
 #comments #navegaComments form{width:192px; float:right;}
 #comments #navegaComments form input, #searchform input{border:1px solid #e5e7e5; color:#abbfab; width:188px; height:20px; clear:both; margin-top:-4px;}
 
-#searchform {float:right; padding-right:35px;}
+#searchform {float:right; padding-right:35px; position:relative;}
 #searchform ul li{float:left; padding-right:5px;}
 #searchform button{background-color:#fff; color:#3797a5; margin-top:-4px; height:20px; padding:0 10px;}
 
