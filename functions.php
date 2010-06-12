@@ -61,4 +61,27 @@ function da_register_extra_fields($user_id, $password="", $meta=array()) {
 }
 add_action('user_register', 'da_register_extra_fields');
 
+/* Customizing comment data. This should only affect comments of posts
+ * with dialogue enabled. */
+
+function dialogue_preprocess_comment ($commentdata) {
+  /* Doing nothing in common posts */
+  $plugin_enabled =
+    get_post_meta ($commentdata['comment_post_ID'], DIALOGUE_PMF, true);
+  if ($plugin_enabled == "false")
+    return $commentdata;
+
+  if ($_POST['opiniao'] == 'concordo')
+    $commentdata['comment_content'] = 'Concordo';
+  else {
+    if ($_POST['contribuicao'] == 'exclusao')
+      $commentdata['comment_content'] = 'Sugiro a exclusão';
+    else if ($_POST['contribuicao'] == 'retorno')
+      $commentdata['comment_content'] = 'Sugiro o retorno à redação original';
+  }
+  return $commentdata;
+}
+add_filter ('preprocess_comment', 'dialogue_preprocess_comment');
+
+
 ?>
