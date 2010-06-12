@@ -75,3 +75,11 @@
     />
   </label>
 </p>
+
+<p>
+  <label>
+    <input type="checkbox" name="agreeWithTermsOfUse" />
+    Li e concordei com os <a href="<?php bloginfo('url')?>/termos-de-uso">
+    termos de uso</a> do site
+  </label>
+</p>

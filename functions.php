@@ -43,19 +43,25 @@ function da_show_user_profile_regform() {
 add_action('register_form','da_show_user_profile_regform');
 
 function da_validade_register_fields($login, $email, $errors) {
+  /* User did not agree with terms or user, kick him!!! :D */
+  if (!isset($_POST['agreeWithTermsOfUse']))
+    $errors->add('form_erros',
+                 '<strong>ERRO:</strong> Você precisa ler e aceitar ' .
+                 'os termos de uso do site para prosseguir');
+
   /* List of required fields */
   $fields = array('cpf', 'estado', 'cidade', 'segmento', 'manifestacao');
   foreach ($fields as $field) {
     if (trim($_POST[$field]) == '')
       $errors->add('form_erros',
-          "<strong>ERROR:</strong> O campo $field está vazio");
+          "<strong>ERRO:</strong> O campo $field está vazio");
   }
 
   /* Dependency validation */
   if (trim($_POST['manifestacao']) == 'institucional' &&
       trim($_POST['instituicao']) == '') {
     $errors->add('form_errors',
-                 '<strong>ERROR:</strong> O campo instituição está vazio');
+                 '<strong>ERRO:</strong> O campo instituição está vazio');
   }
 }
 add_action('register_post', 'da_validade_register_fields', 10, 3);
