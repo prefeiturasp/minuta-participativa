@@ -24,8 +24,8 @@ function filterContent(content) {
 }
 
 function loadComments(paragraphId, postId) {
-    var query = '{"method":"get_paragraph_comments","params":[' +
-        paragraphId + ',' + postId + ']}'
+    var query = '{"method":"get_paragraph_comments","params":["' +
+        paragraphId + '",' + postId + ']}'
     var container = $('#commentContainer');
 
     /* Testing if the paragraph asked to be loaded is already the
