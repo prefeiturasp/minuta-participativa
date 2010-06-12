@@ -48,12 +48,20 @@
         </div>
 
         <?php endif; ?>
-		<div id="widgets">
-			<div id="sidebar2">
-				<p>me use</p>
-			</div>
-        	<?php get_sidebar(); ?>
-		</div>
+        <div id="widgets">
+          <div id="sidebar2">
+            <ul>
+              <?php dynamic_sidebar('sidebar2'); ?>
+            </ul>
+          </div>
+
+          <div id="sidebar">
+            <ul>
+              <?php dynamic_sidebar('sidebar1'); ?>
+            </ul>
+          </div>
+
+        </div>
       </div><!--fim #content-->
 
 <?php get_footer(); ?>
