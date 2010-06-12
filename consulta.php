@@ -57,7 +57,6 @@ function loadComments(paragraphId, postId) {
 
         /* Building the html of the comment list */
         for (i = 0; i < comments.length; i++) {
-            console.debug(comments[i]);
             var obj = comments[i];
             var infoUser = $('<div>')
                 .addClass('infoUser')

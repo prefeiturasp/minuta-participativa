@@ -19,8 +19,17 @@
         </div><!--fim .post-->
         <?php endwhile; endif; ?>
 
-		<div id="widgets">
-        	<?php get_sidebar(); ?>
-		</div>
+        <div id="widgets">
+          <div id="sidebar2">
+            <ul>
+              <?php dynamic_sidebar('sidebar2'); ?>
+            </ul>
+          </div>
+          <div id="sidebar">
+            <ul>
+              <?php dynamic_sidebar('sidebar1'); ?>
+            </ul>
+          </div>
+        </div>
 
 <?php get_footer(); ?>

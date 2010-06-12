@@ -12,13 +12,18 @@
                               'next_or_number' => 'number')); ?>
   </div><!-- fim .post -->
   <?php endwhile; endif; ?>
-
-	<div id="widgets">
-		<div id="sidebar2">
-			<p>me use</p>
-		</div>
-  	<?php get_sidebar(); ?>
-	</div>
+  <div id="widgets">
+    <div id="sidebar2">
+      <ul>
+        <?php dynamic_sidebar('sidebar2'); ?>
+      </ul>
+    </div>
+    <div id="sidebar">
+      <ul>
+        <?php dynamic_sidebar('sidebar1'); ?>
+      </ul>
+    </div>
+  </div>
 
 </div><!-- fim #content -->
 
