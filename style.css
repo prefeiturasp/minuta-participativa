@@ -86,9 +86,6 @@ a:hover{text-decoration:underline;}
 #commentContainer .comment {padding: 10px; margin-bottom:10px; background-color:#ddedf0; }
 #commentContainer img{ margin:0 auto; }
 
-.comment-pp.active { background-color:gray;}
-.commment-pp .comment-text form{ border:1px solid blue!important;}
-
 #comments .comment .comment{margin-left:20px; border:none; padding:27px 0px 0px 0px;}
 #comments .comment .infoUser img{width:34px height:34px; padding:0px 6px 6px 0px; float:left;}
 #comments .comment .infoUser .date{font-size:0.80em;}
@@ -107,6 +104,13 @@ a:hover{text-decoration:underline;}
 .vcard{border:1px solid red; clear:both; width:35px;}
 .comment-meta{clear:both;}
 .commentmetadata{}
+
+input, select{background-color:#fff; color:#3797a5; padding:4px 1px; border:1px solid #3797a5;}
+input:hover,select:hover{border:2px solid #3797a5; padding:3px 0px;}
+textarea{padding:4px 1px; border:1px solid #3797a5; font-size:15px;}
+textarea:hover{border:2px solid #3797a5; padding:3px 0px;}
+
+
 #commentform input{background-color:#fff; color:#3797a5; padding:4px 1px; border:1px solid #3797a5;}
 #commentform input:hover{border:2px solid #3797a5; padding:3px 0px;}
 #commentform #comment{ width:100%; height:100px; padding:4px 1px; border:1px solid #3797a5; font-size:15px;}
