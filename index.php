@@ -54,13 +54,11 @@
               <?php dynamic_sidebar('sidebar2'); ?>
             </ul>
           </div>
-
           <div id="sidebar">
             <ul>
               <?php dynamic_sidebar('sidebar1'); ?>
             </ul>
           </div>
-
         </div>
       </div><!--fim #content-->
 
