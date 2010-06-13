@@ -71,7 +71,7 @@ function loadComments(paragraphId, postId) {
             var li = $('<li>')
                 .addClass('comment')
                 .append(infoUser)
-                .append('<strong>Contribuição</strong>')
+                .append('<strong>Proposta</strong>')
                 .append($('<p>').html(filterContent(obj.comment_content)));
 
             if (obj.meta.justificativa) {
