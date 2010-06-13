@@ -23,7 +23,8 @@ a:hover{text-decoration:underline;}
 #header h1 a{background: url("images/logo_direitoAutoral.png") no-repeat 0 0; width:287px; height:153px; margin-left:104px; text-indent:-9999px; overflow:hidden; display:block;}
 
 #menu{background-color: #3797a5; border-top:1px solid #fff; float left; padding:8px 0px 8px 40px;}
-#menu li{display:inline; padding-right:15px;}
+#menu li{display:inline; padding:0px 7px; border-left:1px solid #fff;}
+#menu li:first-child{border:none;}
 #menu li a{color:#fff; font-weight: bold; text-transform: uppercase; text-decoration: none; padding:8px 0px 8px 0px;}
 #menu li a:hover{text-decoration: underline;}
 
@@ -61,8 +62,8 @@ a:hover{text-decoration:underline;}
 .post .title{font-size:3.15em; text-transform: uppercase; color:#3797a5;}
 .post p{ margin-bottom:15px; text-align:justify;}
 .post h2{}
-.post .navegaPost{ margin:15px 0;} 
-.post .navegaPost li{display:inline;}
+.post .navegaPost{ margin:15px 0!important;} 
+.post .navegaPost li{display:inline; margin:0!important;}
 .post{margin-bottom:50px;}
 
 .post ul,.post ol {margin-bottom:10px;}
@@ -85,7 +86,7 @@ a:hover{text-decoration:underline;}
 #comments #navegaComments form input, #searchform input{border:1px solid #e5e7e5; color:#abbfab; width:188px; height:20px; clear:both; margin-top:-4px;}
 
 #searchform {float:right; padding-right:35px; position:relative;}
-#searchform ul li{float:left; padding-right:5px;}
+#searchform ul li{float:left; padding:0px 5px; border:none;}
 #searchform button{background-color:#fff; color:#3797a5; margin-top:-4px; height:20px; padding:0 10px;}
 
 /* COMMMENTS (ORIGINAL)
@@ -140,7 +141,7 @@ h3#comments{clear:both; display:block; width:99.5%!important; margin-bottom:10px
 
 #widgets{width:38.087%; padding:0px 0px 12px 0px; float:left;}
 #widgets h2{background: url("images/bulletTitle.png") no-repeat 0 center; padding-left:28px; height:22px; display:block; margin:5px 0px 10px 0px; clear:both;}
-
+#widgets #widgettitle{color:#14363b; margin:0px; clear:both; display:block;}
 #widgets p{ margin-bottom:10px;}
 #widgets li{ margin-bottom:5px;}
 #widgets li a{padding-left:10px;}
