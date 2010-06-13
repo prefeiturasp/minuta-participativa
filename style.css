@@ -92,6 +92,7 @@ a:hover{text-decoration:underline;}
 #comments .comment .infoUser .user{display:block;}
 #comments .comment p{clear:both; text-align:justify;}
 #comments{}
+#comments .comment strong {display:block;margin:5px 0;}
 
 
 .post #comments{width:auto;}

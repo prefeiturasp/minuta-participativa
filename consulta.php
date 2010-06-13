@@ -20,6 +20,8 @@ function formatDate(date) {
 }
 
 function filterContent(content) {
+    while (content.indexOf('\n') != -1)
+        content = content.replace('\n', '<br />');
     return content;
 }
 
@@ -50,7 +52,7 @@ function loadComments(paragraphId, postId) {
         if (comments.length == 0) {
             container.html(
                 '<li class="comment">' +
-                'Não há propostas para o comentário selecionado.' +
+                'Não há propostas para o dispositivo selecionado.' +
                 '</li>');
             return;
         }
