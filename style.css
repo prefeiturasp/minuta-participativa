@@ -23,7 +23,7 @@ a:hover{text-decoration:underline;}
 #header h1 a{background: url("images/logo_direitoAutoral.png") no-repeat 0 0; width:287px; height:153px; margin-left:104px; text-indent:-9999px; overflow:hidden; display:block;}
 
 #menu{background-color: #3797a5; border-top:1px solid #fff; float left; padding:8px 0px 8px 40px;}
-#menu li{display:inline; padding-right:35px;}
+#menu li{display:inline; padding-right:15px;}
 #menu li a{color:#fff; font-weight: bold; text-transform: uppercase; text-decoration: none; padding:8px 0px 8px 0px;}
 #menu li a:hover{text-decoration: underline;}
 
@@ -41,7 +41,7 @@ a:hover{text-decoration:underline;}
 /* LISTA POSTS
 --------------------------------------------- */
 
-#preview{width:21.159%; margin:0px 10px 0px 35px; float:left; display:inline;}
+#preview{width:21.159%; margin:0px 10px 50px 35px; float:left; display:inline;}
 
 #preview .preview-post{padding:20px 10px 10px 10px; position:relative;}
 #preview .preview-post.select{background-color:#ddedf0; border:1px dotted #d2d8d2;}
