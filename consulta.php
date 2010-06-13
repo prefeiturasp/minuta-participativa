@@ -20,6 +20,8 @@ function formatDate(date) {
 }
 
 function filterContent(content) {
+    while (content.indexOf('\n') != -1)
+        content = content.replace('\n', '<br />');
     return content;
 }
 
@@ -50,7 +52,7 @@ function loadComments(paragraphId, postId) {
         if (comments.length == 0) {
             container.html(
                 '<li class="comment">' +
-                'Não há propostas para o comentário selecionado.' +
+                'Não há propostas para o dispositivo selecionado.' +
                 '</li>');
             return;
         }
@@ -66,11 +68,26 @@ function loadComments(paragraphId, postId) {
                 .append($('<span>')
                         .addClass('user')
                         .html(obj.comment_author));
-            $('<li>')
+            var li = $('<li>')
                 .addClass('comment')
                 .append(infoUser)
-                .append($('<p>').html(filterContent(obj.comment_content)))
-                .appendTo(container);
+                .append('<strong>Proposta</strong>')
+                .append($('<p>').html(filterContent(obj.comment_content)));
+
+            if (obj.meta.justificativa) {
+                li.append('<strong>Justificativa</strong>');
+                li.append($('<p>').html(filterContent(obj.meta.justificativa)));
+            }
+
+            if (obj.tags) {
+                var ul = $('<ul>');
+                li.append('<strong>Tags</strong>');
+                for (var t = 0; t < obj.tags.length; t++)
+                    ul.append($('<li>').append(obj.tags[t].name));
+                li.append(ul);
+            }
+
+            li.appendTo(container);
         }
     });
 }
@@ -88,6 +105,19 @@ $(document).ready(function () {
         $('.comment-pp').removeClass('active');
         $(this).addClass('active');
     });
+
+    /* Loading comments from the first paragraph */
+    var postIdExpr = $('input[name=comment_post_ID]');
+    var paragraphIdExpr = $('input[name=dialogue_comment_paragraph]');
+    if (postIdExpr.length > 0 && paragraphIdExpr.length > 0) {
+        var paragraphId = $(paragraphIdExpr[0]);
+
+        /* Marking comment paragraph as the active one */
+        paragraphId.parents('div.comment-pp').addClass('active');
+
+        /* Actually loading comments from the found paragraph */
+        loadComments(paragraphId.val(), $(postIdExpr[0]).val());
+    }
 });
 </script>
 
@@ -97,7 +127,7 @@ $(document).ready(function () {
     while (have_posts()) : the_post();
   ?>
   <div class="post">
-    <span class="title">Consulta</span>
+    <span class="title"><?php the_title(); ?></span>
     <?php the_content(); ?>
   </div>
   <?php endwhile; ?>

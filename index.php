@@ -29,19 +29,19 @@
           <p class="postmetadata">
             <?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in
             <?php the_category(', ') ?> |
-            <?php edit_post_link('Edit', '', ' | '); ?>
-            <?php comments_popup_link('No Comments &#187;',
-                                      '1 Comment &#187;',
-                                      '% Comments &#187;'); ?>
+            <?php edit_post_link('Editar', '', ' | '); ?>
+            <?php comments_popup_link('Nenhum comentário &#187;',
+                                      '1 Comentário &#187;',
+                                      '% Comentários &#187;'); ?>
           </p>
 
         </div><!--fim .post-->
 
         <?php else : ?>
         <div class="post">
-          <h2 class="center">Not Found</h2>
+          <h2 class="center">Não encontrado.</h2>
           <p class="center">
-            Sorry, but you are looking for something that isn't here.
+            Ops. O conteúdo que você procura não foi encontrado. Que tal tentar de novo?
           </p>
           <?php get_search_form(); ?>
         </div>

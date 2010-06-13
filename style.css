@@ -53,7 +53,7 @@ a:hover{text-decoration:underline;}
 /* POSTS
 --------------------------------------------- */
 
-.single .post, .consulta .post, .blog .post{background-color:#ddedf0; border:1px dotted #dddedd; width:31.818%; margin-right:10px; padding:7px 12px 21px 12px; position:relative; float:left;}
+.single .post, .consulta  .post, .blog .post {background-color:#ddedf0; border:1px dotted #dddedd; width:31.818%; margin-right:10px; padding:7px 12px 21px 12px; position:relative; float:left;}
 /*.single .post, .blog .post{width:50%;}*/
 .page .post{background-color:#ddedf0; border:1px dotted #dddedd; width:53.761%; margin-right:10px; padding:7px 12px 21px 12px; margin-left:35px; position:relative; float:left;}
 .post .title{font-size:3.15em; text-transform: uppercase; color:#3797a5;}
@@ -92,10 +92,16 @@ a:hover{text-decoration:underline;}
 #comments .comment .infoUser .user{display:block;}
 #comments .comment p{clear:both; text-align:justify;}
 #comments{}
+#comments .comment strong {display:block;margin:5px 0;}
 
 
 .post #comments{width:auto;}
 .post #comments .comment{border:1px dotted #eef1ee; background-color:#fff; padding: 10px; margin-bottom:10px;}
+
+
+/* Listagem
+--------------------------------------------- */
+
 
 
 /* Forms

@@ -7,7 +7,7 @@
 			<input type="text" value="<?php the_search_query(); ?>" name="s" id="s" />
 		</li>
 		<li>
-			<button type="submit" id="searchsubmit">busca</button>
+			<button type="submit" id="searchsubmit">Busca...</button>
 		</li>
 	</ul>
 </form>

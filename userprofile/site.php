@@ -1,6 +1,14 @@
 <?php include('globals.php'); ?>
 
 <p>
+  <label>
+    Nome completo<br />
+    <input type="text" name="nomecompleto"
+           value="<?php echo $_POST['nomecompleto'] ?>" />
+  </label>
+</p>
+
+<p>
   <label>CPF<br />
   <input type="text" name="cpf" value="<?php echo $_POST['cpf'] ?>" />
 </label>
@@ -79,7 +87,7 @@
 <p>
   <label>
     <input type="checkbox" name="agreeWithTermsOfUse" />
-    Li e concordei com os <a href="<?php bloginfo('url')?>/termos-de-uso">
+    Li e concordei com os <a href="<?php bloginfo('url')?>/referencias">
     termos de uso</a> do site
   </label>
 </p>
