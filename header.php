@@ -51,4 +51,13 @@
             Cadastre-se
           </a>
         </span>
+
+        <?php if (is_user_logged_in()) : ?>
+        <span class="btLogout">
+          <a href="<?php echo wp_logout_url(); ?>"
+             title="Sair do sistema">
+            Sair
+          </a>
+        </span>
+        <?php endif; ?>
       </div><!--fim header-->
