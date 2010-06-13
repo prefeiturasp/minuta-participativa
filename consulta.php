@@ -127,7 +127,7 @@ $(document).ready(function () {
     while (have_posts()) : the_post();
   ?>
   <div class="post">
-    <span class="title">Consulta</span>
+    <span class="title"><?php the_title(); ?></span>
     <?php the_content(); ?>
   </div>
   <?php endwhile; ?>
