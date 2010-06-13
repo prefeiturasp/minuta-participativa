@@ -24,7 +24,6 @@
       <ul>
         <li><a href="#menu">Ir para o menu</a></li>
         <li><a href="#content">Ir para o conteúdo</a></li>
-        <li><a href="#preview">Ir para lista de leis</a></li>
       </ul>
     </div>
     <div id="container">
@@ -45,5 +44,5 @@
 				<?php get_search_form(); ?>
 			</li>
         </ul>
-		<span class="btCadastro"><a href="#" title="Para participar cadastre-se e leia os termos de uso">Cadastre-se</a></span>
+		<span class="btCadastro"><a href="http://localhost:8888/MinC/wordpress/wp-login.php?action=register" title="Para participar cadastre-se e leia os termos de uso">Cadastre-se</a></span>
       </div><!--fim header-->
