@@ -29,8 +29,6 @@ if (function_exists('register_sidebar')) {
 /* Holds the current post being shown at index.php and page.php */
 $current_post = null;
 
-/* -- extending user profile -- */
-
 function da_show_user_profile($user) {
   include('userprofile/admin.php');
 }
@@ -118,16 +116,14 @@ function dialogue_preprocess_comment ($commentdata) {
   if ($plugin_enabled == "false")
     return $commentdata;
 
-  if ($_POST['opiniao'] == 'concordo')
-    $commentdata['comment_content'] = 'Concordo';
-  else {
-    if ($_POST['contribuicao'] == 'exclusao')
-      $commentdata['comment_content'] = 'Sugiro a exclusão';
-    else if ($_POST['contribuicao'] == 'retorno')
-      $commentdata['comment_content'] = 'Sugiro o retorno à redação original';
-    else
-      $commentdata['comment_content'] = $_POST['contrib'];
-  }
+  /* I hate when I have to make something ugly like this,
+   * but... there's a time in our lives that we have to forget some
+   * principles and just do the job.
+   *
+   * This heavy hammer is here to bypass wordpress comment content
+   * checks. No empty comments neither duplicated ones with this
+   * tricky hack. */
+  $commentdata['comment_content'] = date('Y m d H:m:s');
   return $commentdata;
 }
 add_filter ('preprocess_comment', 'dialogue_preprocess_comment');
