@@ -66,11 +66,26 @@ function loadComments(paragraphId, postId) {
                 .append($('<span>')
                         .addClass('user')
                         .html(obj.comment_author));
-            $('<li>')
+            var li = $('<li>')
                 .addClass('comment')
                 .append(infoUser)
-                .append($('<p>').html(filterContent(obj.comment_content)))
-                .appendTo(container);
+                .append('<strong>Contribuição</strong>')
+                .append($('<p>').html(filterContent(obj.comment_content)));
+
+            if (obj.meta.justificativa) {
+                li.append('<strong>Justificativa</strong>');
+                li.append($('<p>').html(filterContent(obj.meta.justificativa)));
+            }
+
+            if (obj.tags) {
+                var ul = $('<ul>');
+                li.append('<strong>Tags</strong>');
+                for (var t = 0; t < obj.tags.length; t++)
+                    ul.append($('<li>').append(obj.tags[t].name));
+                li.append(ul);
+            }
+
+            li.appendTo(container);
         }
     });
 }
