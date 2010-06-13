@@ -8,7 +8,6 @@
              $post = $current_post;
              setup_postdata ($post);
          ?>
-
         <div class="post">
           <span class="title">Blog</span>
           <ul class="navegaPost">

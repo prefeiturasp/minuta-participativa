@@ -104,11 +104,12 @@ a:hover{text-decoration:underline;}
 .vcard{border:1px solid red; clear:both; width:35px;}
 .comment-meta{clear:both;}
 .commentmetadata{}
-
-input, select{background-color:#fff; color:#3797a5; padding:4px 1px; border:1px solid #3797a5;}
-input:hover,select:hover{border:2px solid #3797a5; padding:3px 0px;}
-textarea{padding:4px 1px; border:1px solid #3797a5; font-size:15px;}
-textarea:hover{border:2px solid #3797a5; padding:3px 0px;}
+.comment-pp{margin-bottom:10px;}
+.comment-pp.active{background-color:#edf7f8;}
+.comment-form input, .comment-form select{background-color:#fff; color:#3797a5; padding:4px 1px; border:1px solid #3797a5;}
+.comment-form input:hover,.comment-form select:hover{border:2px solid #3797a5; padding:3px 0px;}
+.comment-form textarea{padding:4px 1px; border:1px solid #3797a5; font-size:15px;}
+.comment-form textarea:hover{border:2px solid #3797a5; padding:3px 0px;}
 
 
 #commentform input{background-color:#fff; color:#3797a5; padding:4px 1px; border:1px solid #3797a5;}
@@ -120,7 +121,10 @@ textarea:hover{border:2px solid #3797a5; padding:3px 0px;}
 
 #widgets{}
 #widgets h2{background: url("images/bulletTitle.png") no-repeat 0 center; padding-left:28px; height:22px; display:block; margin:5px 0px 10px 0px;}
-#widgets{}
+
+#widgets p{ margin-bottom:10px;}
+
+#widgets li a{padding-left:10px;}
 #sidebar, #sidebar2{margin-right:12px; width:43.3%; float:left;}
 #sidebar{margin-right:0px;}
 
