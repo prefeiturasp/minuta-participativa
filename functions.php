@@ -42,7 +42,31 @@ function da_show_user_profile_regform() {
 }
 add_action('register_form','da_show_user_profile_regform');
 
-function da_validade_register_fields($login, $email, $errors) {
+/* Specific validation functions */
+
+function da_validate_br_cpf($cpf) {
+  $cpf = str_pad(ereg_replace('[^0-9]', '', $cpf), 11, '0', STR_PAD_LEFT);
+
+  if (strlen($cpf) != 11)
+    return false;
+  for ($i = 0; $i <= 9; $i++) {
+    $obvious_value = '';
+    for ($j = 0; $j < 11; $j++)
+      $obvious_value .= $i;
+    if ($cpf == $obvious_value)
+      return false;
+  }
+
+  for ($v = 9; $v < 11; $v++) {
+    for ($d = 0, $c = 0; $c < $v; $c++)
+      $d += $cpf{$c} * (($v + 1) - $c);
+    if ($cpf{$c} != ((10 * $d) % 11) % 10)
+      return false;
+  }
+  return true;
+}
+
+function da_validate_register_fields($login, $email, $errors) {
   /* User did not agree with terms or user, kick him!!! :D */
   if (!isset($_POST['agreeWithTermsOfUse']))
     $errors->add('form_erros',
@@ -50,7 +74,8 @@ function da_validade_register_fields($login, $email, $errors) {
                  'os termos de uso do site para prosseguir');
 
   /* List of required fields */
-  $fields = array('cpf', 'estado', 'cidade', 'segmento', 'manifestacao');
+  $fields = array('cpf', 'estado', 'cidade', 'segmento', 'manifestacao',
+                  'nomecompleto');
   foreach ($fields as $field) {
     if (trim($_POST[$field]) == '')
       $errors->add('form_erros',
@@ -63,13 +88,18 @@ function da_validade_register_fields($login, $email, $errors) {
     $errors->add('form_errors',
                  '<strong>ERRO:</strong> O campo instituição está vazio');
   }
+
+  /* Specific validation */
+  if (trim($_POST['cpf']) != '' && !da_validate_br_cpf($_POST['cpf']))
+    $errors->add('form_errors',
+                 '<strong>ERRO:</strong> O CPF informado é inválido');
 }
-add_action('register_post', 'da_validade_register_fields', 10, 3);
+add_action('register_post', 'da_validate_register_fields', 10, 3);
 
 function da_register_extra_fields($user_id, $password="", $meta=array()) {
   /* list of all extra fields being inserted in the user entity */
   $fields = array('cpf', 'estado', 'cidade', 'segmento', 'manifestacao',
-                  'instituicao');
+                  'nomecompleto', 'instituicao');
 
   /* Thanks to da_validade_register_fields we don't need to validate
    * fields here. */
