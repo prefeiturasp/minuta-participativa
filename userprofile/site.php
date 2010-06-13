@@ -79,7 +79,7 @@
 <p>
   <label>
     <input type="checkbox" name="agreeWithTermsOfUse" />
-    Li e concordei com os <a href="<?php bloginfo('url')?>/termos-de-uso">
+    Li e concordei com os <a href="<?php bloginfo('url')?>/referencias">
     termos de uso</a> do site
   </label>
 </p>
