@@ -45,5 +45,10 @@
 				<?php get_search_form(); ?>
 			</li>
         </ul>
-		<span class="btCadastro"><a href="#" title="Para participar cadastre-se e leia os termos de uso">Cadastre-se</a></span>
+        <span class="btCadastro">
+          <a href="<?php bloginfo('url')?>/referencias"
+             title="Para participar cadastre-se e leia os termos de uso">
+            Cadastre-se
+          </a>
+        </span>
       </div><!--fim header-->
