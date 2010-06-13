@@ -95,6 +95,8 @@ function dialogue_preprocess_comment ($commentdata) {
       $commentdata['comment_content'] = 'Sugiro a exclusão';
     else if ($_POST['contribuicao'] == 'retorno')
       $commentdata['comment_content'] = 'Sugiro o retorno à redação original';
+    else
+      $commentdata['comment_content'] = $_POST['contrib'];
   }
   return $commentdata;
 }
