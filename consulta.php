@@ -88,6 +88,19 @@ $(document).ready(function () {
         $('.comment-pp').removeClass('active');
         $(this).addClass('active');
     });
+
+    /* Loading comments from the first paragraph */
+    var postIdExpr = $('input[name=comment_post_ID]');
+    var paragraphIdExpr = $('input[name=dialogue_comment_paragraph]');
+    if (postIdExpr.length > 0 && paragraphIdExpr.length > 0) {
+        var paragraphId = $(paragraphIdExpr[0]);
+
+        /* Marking comment paragraph as the active one */
+        paragraphId.parents('div.comment-pp').addClass('active');
+
+        /* Actually loading comments from the found paragraph */
+        loadComments(paragraphId.val(), $(postIdExpr[0]).val());
+    }
 });
 </script>
 
