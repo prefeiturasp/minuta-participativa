@@ -19,6 +19,38 @@ function formatDate(date) {
     return date;
 }
 
+function formatOpinion(opinion) {
+    switch (opinion) {
+    case 'concordo':
+        return 'Concordo';
+    case 'concordo-com-ressalvas':
+        return 'Concordo com ressalvas';
+    case 'discordo':
+        return 'Discordo';
+    default:
+        return opinion;
+    }
+}
+
+function formatProposal(proposal) {
+    switch (proposal) {
+    case 'alteracao':
+        return 'Alteração no texto';
+
+    case 'exclusao':
+        return 'Exclusão do dispositivo';
+
+    case 'retorno':
+        return 'Retorno à redação original';
+
+    case 'acrescimo':
+        return 'Acréscimo de um novo dispositivo';
+
+    default:
+        return proposal;
+    }
+}
+
 function filterContent(content) {
     while (content.indexOf('\n') != -1)
         content = content.replace('\n', '<br />');
@@ -71,8 +103,18 @@ function loadComments(paragraphId, postId) {
             var li = $('<li>')
                 .addClass('comment')
                 .append(infoUser)
-                .append('<strong>Proposta</strong>')
-                .append($('<p>').html(filterContent(obj.comment_content)));
+                .append('<strong>Opinião</strong>')
+                .append($('<p>').html(formatOpinion(obj.meta.opiniao)));
+
+            if (obj.meta.proposta) {
+                li.append('<strong>Proposta</strong>');
+                li.append($('<p>').html(formatProposal(obj.meta.proposta)));
+            }
+
+            if (obj.meta.contribuicao) {
+                li.append('<strong>Contribuição</strong>');
+                li.append($('<p>').html(filterContent(obj.meta.contribuicao)));
+            }
 
             if (obj.meta.justificativa) {
                 li.append('<strong>Justificativa</strong>');
