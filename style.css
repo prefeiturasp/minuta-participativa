@@ -63,6 +63,11 @@ a:hover{text-decoration:underline;}
 .post .navegaPost li{display:inline;}
 .post{margin-bottom:50px;}
 
+.post ul,.post ol {margin-bottom:10px;}
+.post ul li,.post ol li{ margin-left:20px;} 
+.post ul li{list-style-type:disc;}
+.post ol li{list-style-type:decimal;}
+
 /*.consulta .post .lerComentarios{background:#fff url("images/setaComentarios.png") no-repeat center right; color:#c8a479; text-decoration: none; padding:0px 13px 2px 3px; position:absolute; right:-1px; top:7px;}
 .post .lerComentarios:hover{text-decoration: underline;}
 */
@@ -107,11 +112,15 @@ a:hover{text-decoration:underline;}
 /* Forms
 --------------------------------------------- */
 
-.vcard{border:1px solid red; clear:both; width:35px;}
-.comment-meta{clear:both;}
-.commentmetadata{}
+.vcard{border:1px solid red; clear:; width:35px;}
+.comment-meta{clear:both; float:;}
+.comment p{ border:1px solid brown;}
+.commentmetadata{ border:1px solid green;}
+.commentlist{ border:1px solid blue;}
+
 .comment-pp{margin-bottom:10px;}
 .comment-pp.active{background-color:#edf7f8;}
+
 .comment-form input, .comment-form select{background-color:#fff; color:#3797a5; padding:4px 1px; border:1px solid #3797a5;}
 .comment-form input:hover,.comment-form select:hover{border:2px solid #3797a5; padding:3px 0px;}
 .comment-form textarea{padding:4px 1px; border:1px solid #3797a5; font-size:15px;}
