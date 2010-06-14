@@ -46,7 +46,7 @@
         </ul>
 
         <span class="btCadastro">
-          <a href="<?php bloginfo('url')?>/referencias"
+          <a href="<?php bloginfo('url')?>/termos-de-uso"
              title="Para participar cadastre-se e leia os termos de uso">
             Cadastre-se
           </a>

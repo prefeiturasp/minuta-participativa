@@ -94,7 +94,7 @@ legend{color: #777; font-size: 13px;padding-right:6px; margin-left:-6px;}
 <p>
   <label>
     <input type="checkbox" name="agreeWithTermsOfUse" />
-    Li e concordei com os <a href="<?php bloginfo('url')?>/referencias">
+    Li e concordei com os <a href="<?php bloginfo('url')?>/termos-de-uso">
     termos de uso</a> do site
   </label>
 </p>
