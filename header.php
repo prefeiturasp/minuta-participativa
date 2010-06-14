@@ -34,15 +34,15 @@
           </a>
         </h1>
         <ul id="menu">
+          <?php wp_list_pages('title_li=&depth=1'); ?>
           <li>
             <a href="<?php echo get_option('home'); ?>/" title="Blog">
               Blog
             </a>
           </li>
-          <?php wp_list_pages('title_li=&depth=1'); ?>
-			<li>
-				<?php get_search_form(); ?>
-			</li>
+          <li>
+            <?php get_search_form(); ?>
+          </li>
         </ul>
 
         <span class="btCadastro">
