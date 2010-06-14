@@ -125,7 +125,7 @@ h3#comments{clear:both; display:block; width:99.5%!important; margin-bottom:10px
 
 .comment-pp{}
 .comment-pp.active{background-color:#edf7f8;}
-
+.comment-pp .comment-text{ margin-bottom:0px;}
 .comment-form input, .comment-form select{background-color:#fff; color:#3797a5; padding:4px 1px; border:1px solid #3797a5;}
 .comment-form input:hover,.comment-form select:hover{border:2px solid #3797a5; padding:3px 0px;}
 .comment-form textarea{padding:4px 1px; border:1px solid #3797a5; font-size:15px;}
