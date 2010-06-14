@@ -176,7 +176,8 @@ $(document).ready(function () {
 
   <div id="comments">
     <div id="navegaComments">
-      <h3>Lista de páginas com comentários</h3>
+      <h2 class="widgettitle">Comentários</h2>
+      <!--
       <ol>
         <li><a href="#" title="Página 1">1</a></li>
         <li><a href="#" title="Página 2">2</a></li>
@@ -188,6 +189,7 @@ $(document).ready(function () {
         <label for="">Campo busca de comentários</label>
         <input type="text" name="busca nos comentários" />
       </form>
+      -->
     </div><!--fim #navegaComments-->
     <ul id="commentContainer"></ul>
   </div><!--fim #comments-->
