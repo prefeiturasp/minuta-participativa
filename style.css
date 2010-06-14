@@ -5,6 +5,10 @@ Description: Tema para o blog do direito autoral
 Version: 0.1
 Author: Lincoln de Sousa, Fabrício Soares, Yasodara Córdova
 Author URI: http://xemele.cultura.gov.br
+
+	The CSS, XHTML and design is released under AGPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
 */
 
 @charset "utf-8";
@@ -104,7 +108,7 @@ a:hover{text-decoration:underline;}
 /* Listagem
 --------------------------------------------- */
 
-
+.narrowcolumn post{background-color:#39745}
 
 /* Forms
 --------------------------------------------- */
