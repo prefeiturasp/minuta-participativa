@@ -40,7 +40,7 @@
               Blog
             </a>
           </li>
-          <li>
+          <li class="last">
             <?php get_search_form(); ?>
           </li>
         </ul>

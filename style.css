@@ -29,6 +29,7 @@ a:hover{text-decoration:underline;}
 #menu{background-color: #3797a5; border-top:1px solid #fff; float left; padding:8px 0px 8px 40px;}
 #menu li{display:inline; padding:0px 7px; border-left:1px solid #fff;}
 #menu li:first-child{border:none;}
+#menu li.last{border-left:none;}
 #menu li a{color:#fff; font-weight: bold; text-transform: uppercase; text-decoration: none; padding:8px 0px 8px 0px;}
 #menu li a:hover{text-decoration: underline;}
 
