@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title><?php bloginfo('name'); ?></title>
     <?php wp_enqueue_script('jquery'); ?>
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
