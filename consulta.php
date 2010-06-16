@@ -22,11 +22,11 @@ function formatDate(date) {
 function formatOpinion(opinion) {
     switch (opinion) {
     case 'concordo':
-        return 'Concordo';
+        return 'Concordo com o Dispositivo';
     case 'concordo-com-ressalvas':
-        return 'Concordo com ressalvas';
+        return 'Concordo com o Dispositivo com ressalvas';
     case 'discordo':
-        return 'Discordo';
+        return 'Discordo do Dispositivo';
     default:
         return opinion;
     }
