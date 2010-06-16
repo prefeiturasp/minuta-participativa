@@ -8,13 +8,14 @@
 
      /* From which post the listing should start (helper for the
       * pagination) */
-     $offset = $paged * $maxposts;
+     $paged = $_GET['paged'];
 
      /* Query that will return posts */
      $category = get_cat_ID("Blog");
      $allposts = get_posts("numberposts=$maxposts&" .
                            "category=$category&" .
-                           "offset=$offset");
+                           "paged=$paged");
+//                           "offset=$offset");
 
      /* Using this `pid' flag to avoid clashing with `p' var that
       * leads the user to the `single.php' page. */
