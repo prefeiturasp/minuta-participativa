@@ -176,7 +176,7 @@ $(document).ready(function () {
 
   <div id="comments">
     <div id="navegaComments">
-      <h2 class="widgettitle">Comentários</h2>
+      <h2 class="widgettitle">Propostas</h2>
       <!--
       <ol>
         <li><a href="#" title="Página 1">1</a></li>
