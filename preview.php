@@ -15,7 +15,6 @@
      $allposts = get_posts("numberposts=$maxposts&" .
                            "category=$category&" .
                            "paged=$paged");
-//                           "offset=$offset");
 
      /* Using this `pid' flag to avoid clashing with `p' var that
       * leads the user to the `single.php' page. */
@@ -60,6 +59,6 @@
   </div>
 
   <?php endforeach; ?>
- <?php posts_nav_link(); ?> 
+  <?php posts_nav_link(); ?>
 
 </div><!--fim #preview-->
