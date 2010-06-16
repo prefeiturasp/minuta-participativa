@@ -4,11 +4,11 @@
      global $current_post;
 
      /* Number of posts to be listed */
-     $maxposts = 5;
+     $maxposts = get_option('posts_per_page');
 
      /* From which post the listing should start (helper for the
       * pagination) */
-     $offset = 0;
+     $offset = $paged * $maxposts;
 
      /* Query that will return posts */
      $category = get_cat_ID("Blog");
@@ -59,4 +59,6 @@
   </div>
 
   <?php endforeach; ?>
+ <?php posts_nav_link(); ?> 
+
 </div><!--fim #preview-->
