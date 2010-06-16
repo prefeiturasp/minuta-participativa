@@ -146,6 +146,10 @@ $(document).ready(function () {
          * column. */
         $('.comment-pp').removeClass('active');
         $(this).addClass('active');
+
+        /* Moving the comments column to near the clicked post */
+        var margin = $(this).offset().top - 220;
+        $('#comments').css('margin-top', margin);
     });
 
     /* Loading comments from the first paragraph */
