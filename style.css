@@ -15,7 +15,7 @@ Author URI: http://xemele.cultura.gov.br
 
 *{margin:0px; padding:0px; border:none; vertical-align:baseline; list-style-type:none;}
 body{background:#fff; font-size:75%; font-family: Arial, "MS Trebuchet", sans-serif; color: #14363b;}
-a{color:#d36c18; text-decoration:underline;}
+a{color:#3797a5; text-decoration:underline;}
 a:hover{text-decoration:none;}
 #acessibilidade{display:none;}
 #container{min-width:1020px; max-width:1276px; margin:0 auto; position:relative;}
@@ -149,9 +149,10 @@ h3#comments{clear:both; display:block; width:99.5%!important; margin-bottom:10px
 --------------------------------------------- */
 
 #widgets{width:38.087%; padding:0px 0px 12px 0px; float:left;}
-#widgets h2{background: url("images/bulletTitle.png") no-repeat 0 center; padding-left:28px; min-height:22px; display:block; margin:5px 0px 10px 0px; clear:both; color:;}
+#widgets h2{background: url("images/bulletTitle.png") no-repeat 0 center; padding-left:28px; min-height:22px; display:block; margin:5px 0px 10px 0px; clear:both; color:#3797a5;}
 #widgets #widgettitle{color:#14363b; margin:0px;}
 #widgets p{ margin-bottom:10px;}
+.widget_recent_entries ul{ list-style-type:inherit;}
 #widgets li{ margin-bottom:5px;}
 #widgets li a{padding-left:10px;}
 #sidebar, #sidebar2{margin-right:2.2%; width:43.3%; float:left; padding:10px;}
