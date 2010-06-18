@@ -39,7 +39,11 @@
               Blog
             </a>
           </li>
-          <?php wp_list_pages('title_li=&depth=1'); ?>
+
+          <?php
+	    $page = get_page_by_title('Processo colaborativo')
+	    wp_list_pages('title_li=&exclude='. $page->ID);
+	  ?>
 			<li>
 				<?php get_search_form(); ?>
 			</li>
