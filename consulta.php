@@ -174,6 +174,12 @@ $(document).ready(function () {
   ?>
   <div class="post">
     <span class="title"><?php the_title(); ?></span>
+    <span class="counter">
+      <?php
+        $comments = get_comment_count($post->ID);
+        echo "(" . $comments['approved'] . ")";
+      ?>
+    </span>
     <?php the_content(); ?>
   </div>
   <?php endwhile; ?>
