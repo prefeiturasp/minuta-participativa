@@ -145,6 +145,11 @@ h3#comments{clear:both; display:block; width:99.5%!important; margin-bottom:10px
 #commentform #submit{background-color:#fff; color:#3797a5; padding:3px 10px; border:1px solid #3797a5; font-weight:bold;}
 #commentform #submit:hover{padding:2px 9px; border:2px solid #3797a5; }
 
+ul.tagColumn {float:left;}
+ul.tagColumn.col0 li {margin:0;}
+ul.tagColumn li {list-style:none none;}
+.comment-pp li.last{clear:both;}
+
 /* WIDGETS
 --------------------------------------------- */
 
