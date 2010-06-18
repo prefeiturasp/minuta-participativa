@@ -122,7 +122,7 @@ function setup_cpages(ct, total, current, fun) {
                         $("<a>")
                         .html(i+1)
                         .attr("title","Página "+(i+1))
-                        .attr("href", "#")
+                        .attr("href", "javascript:;")
                         .attr("name", i)
                         .click(function() { fun($(this).attr("name")) })))
     }
