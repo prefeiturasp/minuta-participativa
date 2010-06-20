@@ -4,17 +4,18 @@
      global $current_post;
 
      /* Number of posts to be listed */
-     $maxposts = 5;
+     $maxposts = get_option('posts_per_page');
 
      /* From which post the listing should start (helper for the
       * pagination) */
-     $offset = 0;
+     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
 
      /* Query that will return posts */
      $category = get_cat_ID("Blog");
      $allposts = get_posts("numberposts=$maxposts&" .
                            "category=$category&" .
-                           "offset=$offset");
+                           "paged=$paged");
 
      /* Using this `pid' flag to avoid clashing with `p' var that
       * leads the user to the `single.php' page. */
@@ -59,4 +60,6 @@
   </div>
 
   <?php endforeach; ?>
+  <?php posts_nav_link(); ?>
+
 </div><!--fim #preview-->
