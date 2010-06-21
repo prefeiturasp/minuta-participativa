@@ -35,7 +35,7 @@
         </h1>
         <ul id="menu">
           <?php
-	    $page = get_page_by_title('Processo colaborativo')
+            $page = get_page_by_title('Processo colaborativo');
 	    wp_list_pages('title_li=&exclude='. $page->ID);
 	  ?>
           <li>
