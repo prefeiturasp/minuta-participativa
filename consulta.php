@@ -25,7 +25,7 @@ function formatOpinion(opinion) {
         return 'Concordo com o Dispositivo';
     case 'concordo-com-ressalvas':
         return 'Concordo com o Dispositivo com ressalvas';
-    case 'discordo':
+    case 'nao-concordo':
         return 'Discordo do Dispositivo';
     default:
         return opinion;
