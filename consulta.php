@@ -99,7 +99,7 @@ function loadComments(paragraphId, postId) {
                         .html(formatDate(obj.comment_date)))
                 .append($('<span>')
                         .addClass('user')
-                        .html(obj.comment_author));
+                        .html(obj.user_name));
             var li = $('<li>')
                 .addClass('comment')
                 .append(infoUser)
