@@ -29,7 +29,7 @@
     <div id="container">
       <div id="header">
         <h1>
-          <a href="<?php echo get_option('home'); ?>/">
+          <a href="<?php echo get_option('home'); ?>/" accesskey="1">
             <?php bloginfo('name'); ?>
           </a>
         </h1>
