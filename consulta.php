@@ -25,7 +25,7 @@ function formatOpinion(opinion) {
         return 'Concordo com o Dispositivo';
     case 'concordo-com-ressalvas':
         return 'Concordo com o Dispositivo com ressalvas';
-    case 'discordo':
+    case 'nao-concordo':
         return 'Discordo do Dispositivo';
     default:
         return opinion;
@@ -99,7 +99,7 @@ function loadComments(paragraphId, postId) {
                         .html(formatDate(obj.comment_date)))
                 .append($('<span>')
                         .addClass('user')
-                        .html(obj.comment_author));
+                        .html(obj.user_name));
             var li = $('<li>')
                 .addClass('comment')
                 .append(infoUser)

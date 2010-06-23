@@ -34,13 +34,16 @@
           </a>
         </h1>
         <ul id="menu">
-          <?php wp_list_pages('title_li=&depth=1'); ?>
+          <?php
+            $page = get_page_by_title('Processo colaborativo');
+	    wp_list_pages('title_li=&exclude='. $page->ID);
+	  ?>
           <li>
             <a href="<?php echo get_option('home'); ?>/" title="Blog">
               Blog
             </a>
           </li>
-          <li class="last">
+          <li>
             <?php get_search_form(); ?>
           </li>
         </ul>

@@ -8,7 +8,8 @@
 
      /* From which post the listing should start (helper for the
       * pagination) */
-     $paged = $_GET['paged'];
+     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
 
      /* Query that will return posts */
      $category = get_cat_ID("Blog");
