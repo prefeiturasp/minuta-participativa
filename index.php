@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+kg<?php get_header(); ?>
 
       <div id="content">
         <?php include('preview.php'); ?>

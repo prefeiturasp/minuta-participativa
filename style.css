@@ -22,9 +22,14 @@ a:hover{text-decoration:none;}
 
 /* HEADER
 --------------------------------------------- */
-#header{background: url("images/back.png") repeat 0 0;}
+/*#header{background: url("images/back.png") repeat 0 0;}
 #header h1{}
 #header h1 a{background: url("images/logo_direitoAutoral.png") no-repeat 0 0; width:287px; height:153px; margin-left:104px; text-indent:-9999px; overflow:hidden; display:block;}
+*/
+
+#header{background: url("images/headerNew.jpg") no-repeat 0 0;clear: both; overflow: auto;}
+#header h1{}
+#header h1 a{text-indent:-9999px; overflow:hidden; display:block; margin: 35px auto 34px auto; width: 385px; height: 80px;}
 
 #menu{background-color: #3797a5; border-top:1px solid #fff; float left; padding:8px 0px 8px 2.129%;}
 #menu li{display:inline; padding:0 0.597%; border-left:1px solid #fff;}
@@ -33,7 +38,9 @@ a:hover{text-decoration:none;}
 #menu li a{color:#fff; font-weight: bold; text-transform: uppercase; text-decoration: none; padding:8px 0px 8px 0px;}
 #menu li a:hover{text-decoration: underline;}
 
-.btCadastro a{background:url("images/logoCadastro.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:202px; height:90px; position:absolute; top:40px; right:100px;}
+/*.btCadastro a{background:url("images/logoCadastro.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:202px; height:90px; position:absolute; top:40px; right:100px;}
+*/
+.btCadastro a{text-indent:-9999px; overflow:hidden; display:block; position: absolute;top: 0px; left:445px; height: 33px; width: 380px;}
 
 .btLogout a{text-align:right; display:block; position:absolute; top:10px; right:100px;}
 
