@@ -46,7 +46,7 @@ a:hover{text-decoration:none;}
 
 .rss{background:url("images/iconRss.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:40px;  position:absolute; top:-8px; left:-40px; clear:;}
 
-
+.counter {font-size:3.3em; margin-left: 20px; color:#ca6821;}
 /* CONTEUDO
 --------------------------------------------- */
 #content{margin:10px 0;}
