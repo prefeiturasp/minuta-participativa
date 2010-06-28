@@ -10,11 +10,9 @@
       * pagination) */
      $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-
      /* Query that will return posts */
-     $category = get_cat_ID("Blog");
      $allposts = get_posts("numberposts=$maxposts&" .
-                           "category=$category&" .
+                           "category_name=blog&" .
                            "paged=$paged");
 
      /* Using this `pid' flag to avoid clashing with `p' var that
