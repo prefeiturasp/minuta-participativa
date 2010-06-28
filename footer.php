@@ -1,4 +1,4 @@
-      <div id="footer">
+      div id="footer">
         <ul>
 	  <li><a href="http://www.cultura.gov.br/consultadireitoautoral/termos-de-uso/" title="Termos de uso">Termos de uso</a></li>
 	  <li><a href="http://www.cultura.gov.br/consultadireitoautoral/sobre/" title="Sobre a Revisão da Lei de Direito Autoral">Sobre</a></li>

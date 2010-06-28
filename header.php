@@ -29,13 +29,13 @@
     <div id="container">
       <div id="header">
         <h1>
-          <a href="<?php echo get_option('home'); ?>/">
+          <a href="<?php echo get_option('home'); ?>/" accesskey="1">
             <?php bloginfo('name'); ?>
           </a>
         </h1>
         <ul id="menu">
           <?php
-	    $page = get_page_by_title('Processo colaborativo')
+            $page = get_page_by_title('Processo colaborativo');
 	    wp_list_pages('title_li=&exclude='. $page->ID);
 	  ?>
           <li>

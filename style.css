@@ -22,24 +22,31 @@ a:hover{text-decoration:none;}
 
 /* HEADER
 --------------------------------------------- */
-#header{background: url("images/back.png") repeat 0 0;}
+/*#header{background: url("images/back.png") repeat 0 0;}
 #header h1{}
 #header h1 a{background: url("images/logo_direitoAutoral.png") no-repeat 0 0; width:287px; height:153px; margin-left:104px; text-indent:-9999px; overflow:hidden; display:block;}
+*/
+
+#header{background: url("images/headerNew.jpg") no-repeat 0 0;clear: both; overflow: auto;}
+#header h1{}
+#header h1 a{text-indent:-9999px; overflow:hidden; display:block; margin: 35px auto 34px auto; width: 385px; height: 80px;}
 
 #menu{background-color: #3797a5; border-top:1px solid #fff; float left; padding:8px 0px 8px 2.129%;}
-#menu li{display:inline; padding:0% 1.597%; border-left:1px solid #fff;}
+#menu li{display:inline; padding:0 0.597%; border-left:1px solid #fff;}
 #menu li:first-child{border:none;}
 #menu li.last{border-left:none;}
 #menu li a{color:#fff; font-weight: bold; text-transform: uppercase; text-decoration: none; padding:8px 0px 8px 0px;}
 #menu li a:hover{text-decoration: underline;}
 
-.btCadastro a{background:url("images/logoCadastro.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:202px; height:90px; position:absolute; top:40px; right:100px;}
+/*.btCadastro a{background:url("images/logoCadastro.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:202px; height:90px; position:absolute; top:40px; right:100px;}
+*/
+.btCadastro a{text-indent:-9999px; overflow:hidden; display:block; position: absolute;top: 0px; left:445px; height: 33px; width: 380px;}
 
 .btLogout a{text-align:right; display:block; position:absolute; top:10px; right:100px;}
 
 .rss{background:url("images/iconRss.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:40px;  position:absolute; top:-8px; left:-40px; clear:;}
 
-
+.counter {font-size:3.3em; margin-left: 20px; color:#ca6821;}
 /* CONTEUDO
 --------------------------------------------- */
 #content{margin:10px 0;}
@@ -157,7 +164,7 @@ ul.tagColumn li {list-style:none none;}
 #widgets h2{background: url("images/bulletTitle.png") no-repeat 0 center; padding-left:28px; min-height:22px; display:block; margin:5px 0px 10px 0px; clear:both; color:#3797a5;}
 #widgets #widgettitle{color:#14363b; margin:0px;}
 #widgets p{ margin-bottom:10px;}
-.widget_recent_entries ul{ list-style-type:inherit;}
+.widget_recent_entries li a{ border-bottom: 1px solid #cd6d26; text-decoration: none;}
 #widgets li{ margin-bottom:5px;}
 #widgets li a{padding-left:10px;}
 #sidebar, #sidebar2{margin-right:2.2%; width:43.3%; float:left; padding:10px;}
