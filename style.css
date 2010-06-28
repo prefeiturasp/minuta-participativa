@@ -22,10 +22,6 @@ a:hover{text-decoration:none;}
 
 /* HEADER
 --------------------------------------------- */
-/*#header{background: url("images/back.png") repeat 0 0;}
-#header h1{}
-#header h1 a{background: url("images/logo_direitoAutoral.png") no-repeat 0 0; width:287px; height:153px; margin-left:104px; text-indent:-9999px; overflow:hidden; display:block;}
-*/
 
 #header{background: url("images/headerNew.jpg") no-repeat 0 0;clear: both; overflow: auto;}
 #header h1{}
@@ -38,8 +34,6 @@ a:hover{text-decoration:none;}
 #menu li a{color:#fff; font-weight: bold; text-transform: uppercase; text-decoration: none; padding:8px 0px 8px 0px;}
 #menu li a:hover{text-decoration: underline;}
 
-/*.btCadastro a{background:url("images/logoCadastro.png") no-repeat 0 0; text-indent:-9999px; overflow:hidden; display:block; width:202px; height:90px; position:absolute; top:40px; right:100px;}
-*/
 .btCadastro a{text-indent:-9999px; overflow:hidden; display:block; position: absolute;top: 0px; left:445px; height: 33px; width: 380px;}
 
 .btLogout a{text-align:right; display:block; position:absolute; top:10px; right:100px;}
@@ -82,10 +76,6 @@ a:hover{text-decoration:none;}
 .post ul li,.post ol li{ margin-left:20px;} 
 .post ul li{list-style-type:disc;}
 .post ol li{list-style-type:decimal;}
-
-/*.consulta .post .lerComentarios{background:#fff url("images/setaComentarios.png") no-repeat center right; color:#c8a479; text-decoration: none; padding:0px 13px 2px 3px; position:absolute; right:-1px; top:7px;}
-.post .lerComentarios:hover{text-decoration: underline;}
-*/
 
 /* SEARCH FORM COMMENTS
 --------------------------------------------- */
