@@ -34,14 +34,19 @@
           </a>
         </h1>
         <ul id="menu">
+          <li>
+            <a href="<?php echo get_option('home'); ?>/" title="INÍCIO">
+              INÍCIO
+            </a>
+          </li>
           <?php
-            $page = get_page_by_title('Processo colaborativo');
-	    wp_list_pages('title_li=&exclude='. $page->ID);
+            $proc = get_page_by_title('Processo colaborativo');
+            $ajuda = get_page_by_title('Ajuda');
+	    wp_list_pages('title_li=&exclude=' . $proc->ID . ',' . $ajuda->ID);
 	  ?>
           <li>
-            <a href="<?php echo get_option('home'); ?>/" title="Blog">
-              Blog
-            </a>
+            <a href="<?php bloginfo('url') ?>/category/blog/noticias/"
+            title='NA MÍDIA'>NA MÍDIA</a>
           </li>
           <li>
             <?php get_search_form(); ?>
@@ -51,7 +56,7 @@
         <span class="btCadastro">
           <a href="<?php bloginfo('url')?>/termos-de-uso"
              title="Para participar cadastre-se e leia os termos de uso">
-            Cadastre-se
+             Cadastre-se
           </a>
         </span>
 
