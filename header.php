@@ -20,6 +20,12 @@
           rel="stylesheet" type="text/css" media="all" />
   </head>
   <body <?php body_class($BODY_CLASS); ?>>
+    <?php
+      /* A dirty hammer to include this ugly bar only in the
+       * production server. */
+      if (file_exists ('/var/www/www.cultura.gov.br/govbar/govbar.php'))
+        include('/var/www/www.cultura.gov.br/govbar/govbar.php');
+    ?>
     <div id="acessibilidade" tabindex="1">
       <ul>
         <li><a href="#menu">Ir para o menu</a></li>
