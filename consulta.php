@@ -148,7 +148,7 @@ $(document).ready(function () {
         $(this).addClass('active');
 
         /* Moving the comments column to near the clicked post */
-        var margin = $(this).offset().top - 552;
+        var margin = $(this).offset().top - 390;
         $('#comments').css('margin-top', margin);
     });
 
