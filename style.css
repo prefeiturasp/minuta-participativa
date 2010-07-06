@@ -82,10 +82,17 @@ a:hover{text-decoration:none;}
 #comments{width:38.087%; float:left;}
 #comments #navegaComments, #sidebar, #sidebar2{border:1px dotted #eef1ee; background-color:#ddedf0; padding:10px; overflow:auto;}
 #comments #navegaComments h3, #comments #navegaComments form label{ display:none;}
+#navegaComments{background:url("images/setaProposta.png") no-repeat 0 0; padding-left: 60px;} 
+#navegaComments h2{margin-left: 30px;} 
 #comments #navegaComments ol{min-width:40px; max-width:210px; float:left;}
 #comments #navegaComments ol li{display:inline; font-size:1.15em;}
 #comments #navegaComments form{width:192px; float:right;}
 #comments #navegaComments form input, #searchform input{border:1px solid #e5e7e5; color:#abbfab; width:188px; height:20px; clear:both; margin-top:-4px;}
+
+#proposta{border: 1px solid #ddedf0;margin-bottom: 4px;}
+#proposta h2{background-color: #eaeaea; padding: 10px 10px;}
+#proposta .listaProposta{height: 290px; overflow: auto; padding: 10px;}
+#proposta .listaProposta p{ margin-bottom: 10px;}
 
 #searchform {float:right; padding-right:35px; position:relative;}
 #searchform ul li{float:left; padding:0px 5px; border:none;}
@@ -154,11 +161,14 @@ ul.tagColumn li {list-style:none none;}
 #widgets h2{background: url("images/bulletTitle.png") no-repeat 0 center; padding-left:28px; min-height:22px; display:block; margin:5px 0px 10px 0px; clear:both; color:#3797a5;}
 #widgets #widgettitle{color:#14363b; margin:0px;}
 #widgets p{ margin-bottom:10px;}
-.widget_recent_entries li a{ border-bottom: 1px solid #cd6d26; text-decoration: none;}
+/*.widget_recent_entries li a{ border-bottom: 1px solid #cd6d26; text-decoration: none;}*/
 #widgets li{ margin-bottom:5px;}
-#widgets li a{padding-left:10px;}
+#widgets li a{margin-left:10px;}
 #sidebar, #sidebar2{margin-right:2.2%; width:43.3%; float:left; padding:10px;}
 #sidebar{margin-right:0px;}
+
+#widgets a{color: #14363b;text-decoration: none!important; border-bottom: 1px solid #cb6923;}
+/*#widgets a:hover{color: #;border-bottom: 1px solid #;}*/
 
 /* FOOTER
 --------------------------------------------- */
