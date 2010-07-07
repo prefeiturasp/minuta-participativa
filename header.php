@@ -48,7 +48,7 @@
           <?php
             $proc = get_page_by_title('Processo colaborativo');
             $ajuda = get_page_by_title('Ajuda');
-	    wp_list_pages('title_li=&exclude=' . $proc->ID . ',' . $ajuda->ID);
+	    wp_list_pages('title_li=&exclude=1204' . $proc->ID . ',' . $ajuda->ID);
 	  ?>
           <li>
             <a href="<?php bloginfo('url') ?>/category/blog/noticias/"
