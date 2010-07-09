@@ -50,14 +50,14 @@ a:hover{text-decoration:none;}
 
 #preview{width:21.159%; margin:0px 10px 21px 3.129%; float:left; display:inline;}
 
-#preview .preview-post{padding:20px 10px 10px 10px; position:relative;}
-#preview .preview-post.select{background-color:#ddedf0; border:1px dotted #d2d8d2;}
-#preview .preview-post .seta{background: url("images/seta.png"); width:14px; height:19px; position:absolute; right:-1px; top:7px; z-index:100;}
-#preview .preview-post h3, #preview .preview-post h3 a{margin-bottom:5px;color:#3797a5;}
-#preview .preview-post h3 a{text-decoration:none;}
-#preview .preview-post h3 a:hover{text-decoration:underline;}
+.preview-post{padding:20px 10px 10px 10px; position:relative;}
+.preview-post.select{background-color:#ddedf0; border:1px dotted #d2d8d2;}
+.preview-post .seta{background: url("images/seta.png"); width:14px; height:19px; position:absolute; right:-1px; top:7px; z-index:100;}
+.preview-post h3, #preview .preview-post h3 a{margin-bottom:5px;color:#3797a5;}
+.preview-post h3 a{text-decoration:none;}
+.preview-post h3 a:hover{text-decoration:underline;}
 .date{font-size:0.95em;}
-#preview .preview-post p{font-size:0.95em; text-align:justify;}
+.preview-post p{font-size:0.95em; text-align:justify;}
 
 /* POSTS
 --------------------------------------------- */
@@ -68,12 +68,12 @@ a:hover{text-decoration:none;}
 .post .title{font-size:3.15em; text-transform: uppercase; color:#3797a5;}
 .post p{ margin-bottom:15px; text-align:justify;}
 .post h2{}
-.post .navegaPost{margin:15px 0!important;} 
+.post .navegaPost{margin:15px 0!important;}
 .post .navegaPost li{display:inline; margin:0!important;}
 .post{margin-bottom:50px;}
 
 .post ul,.post ol {margin-bottom:10px;}
-.post ul li,.post ol li{ margin-left:20px;} 
+.post ul li,.post ol li{ margin-left:20px;}
 .post ul li{list-style-type:disc;}
 .post ol li{list-style-type:decimal;}
 
