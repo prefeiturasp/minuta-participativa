@@ -186,7 +186,7 @@ $(document).ready(function () {
 
   <div id="comments">
     <div id="proposta">
-        <h2>Consute aqui a Lei 9610/98 Consolidada</h2>
+        <h2>Consulte aqui a Lei 9610/98 Consolidada</h2>
         <div class="listaProposta">
             <p style="text-align: center;"><em><strong><span style="text-decoration: underline;">Atualizada com as mudanças da Minuta de Anteprojeto de Lei que está em Consulta Pública.</span></strong></em></p>
             <p style="text-align: center;">Altera, atualiza e consolida a legislação sobre direitos autorais e dá outras providências.</p>
