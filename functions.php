@@ -1,5 +1,26 @@
 <?php
 
+function my_admin_init() {
+  add_action( 'manage_comments_custom_column', 'edit_comment_author_column' );
+  add_filter('manage_edit-comments_columns', 'custom_manage_comment_columns');
+}
+
+function custom_manage_comment_columns ($cols) {
+  $cols['institution'] = 'Instituição do autor';
+
+  return $cols;
+}
+
+function edit_comment_author_column($col_title, $id = 0){
+  if( $col_title == 'institution' ) {
+    $comment = get_comment ($id, ARRAY_A);
+
+    echo esc_attr(get_the_author_meta('instituicao', $comment['user_id']));
+  }
+}
+
+add_action( 'admin_init', 'my_admin_init' );
+
 /* -- Wordpress default stuff -- */
 
 automatic_feed_links();
