@@ -6,20 +6,52 @@ function my_admin_init() {
 }
 
 function custom_manage_comment_columns ($cols) {
-  $cols['institution'] = 'Instituição do autor';
-
+  $cols['dados_autor'] = 'Nome Completo e Tipo de Colaboração';
   return $cols;
 }
 
 function edit_comment_author_column($col_title, $id = 0){
-  if( $col_title == 'institution' ) {
-    $comment = get_comment ($id, ARRAY_A);
 
-    echo esc_attr(get_the_author_meta('instituicao', $comment['user_id']));
+  if($col_title == 'dados_autor') {
+    $comment = get_comment ($id, ARRAY_A);
+    $nomecompleto = get_nome_completo($comment['user_id']);
+    $descricao_tipo_contribuicao =
+        get_descricao_tipo_contribuicao($comment['user_id']);
+
+    echo("<strong>{$nomecompleto}</strong><br/>{$descricao_tipo_contribuicao}");
   }
 }
 
 add_action( 'admin_init', 'my_admin_init' );
+
+/* --  foobar functions -- */
+
+function get_descricao_tipo_contribuicao( $user_id )
+{
+    $manifestacao = get_the_author_meta('manifestacao', $user_id);
+
+    if(empty($manifestacao))
+        return "Não informado";
+
+    $instituicao = get_the_author_meta('instituicao', $user_id);
+    $descricao = ($manifestacao  == 'institucional') ?
+        "{$instituicao} (contribuição institucional)" : "Particular";
+
+    return $descricao;
+}
+
+function get_nome_completo( $user_id )
+{
+    $nome_completo = esc_attr(get_the_author_meta('nomecompleto', $user_id));
+
+    if(empty($nome_completo))
+        $nome_completo = esc_attr(get_the_author_meta('first_name', $user_id) .
+        " " . get_the_author_meta('last_name', $user_id));
+
+    $nome_completo = trim($nome_completo);
+
+    return (empty($nome_completo)) ? "Não informado" : $nome_completo;
+}
 
 /* -- Wordpress default stuff -- */
 
@@ -151,3 +183,4 @@ add_filter ('preprocess_comment', 'dialogue_preprocess_comment');
 
 
 ?>
+
