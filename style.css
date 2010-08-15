@@ -82,8 +82,8 @@ a:hover{text-decoration:none;}
 #comments{width:38.087%; float:left;}
 #comments #navegaComments, #sidebar, #sidebar2{border:1px dotted #eef1ee; background-color:#ddedf0; padding:10px; overflow:auto;}
 #comments #navegaComments h3, #comments #navegaComments form label{ display:none;}
-#navegaComments{background:url("images/setaProposta.png") no-repeat 0 0; padding-left: 60px;} 
-#navegaComments h2{margin-left: 30px;} 
+#navegaComments{background:url("images/setaProposta.png") no-repeat 0 0; padding-left: 60px;}
+#navegaComments h2{margin-left: 30px;}
 #comments #navegaComments ol{min-width:40px; max-width:210px; float:left;}
 #comments #navegaComments ol li{display:inline; font-size:1.15em;}
 #comments #navegaComments form{width:192px; float:right;}
@@ -101,7 +101,7 @@ a:hover{text-decoration:none;}
 /* COMMMENTS (ORIGINAL)
 --------------------------------------------- */
 
-#commentContainer{border:1px dotted #fff; }
+#commentContainer{border:1px dotted #fff; overflow:auto;}
 #commentContainer .comment {padding: 10px; margin-bottom:10px; background-color:#ddedf0; }
 #commentContainer img{ margin:0 auto; }
 
@@ -178,3 +178,4 @@ ul.tagColumn li {list-style:none none;}
 #footer ul li a{color:#fff;}
 #footer{}
 #footer{}
+

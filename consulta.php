@@ -79,7 +79,6 @@ function loadComments(paragraphId, postId) {
     $.getJSON(blogUrl, {dialogue_query:query}, function (comments) {
         var i;
         container.html('');
-
         /* No comments yet */
         if (comments.length == 0) {
             container.html(
@@ -151,6 +150,12 @@ $(document).ready(function () {
         var margin = $(this).offset().top - 370;
         $('#comments').css('margin-top', margin);
     });
+
+    /* seta a altura da div de comentarios (lateral direita) de acordo
+        com a altura da div do post (lateral esquerda)
+    */
+
+    $("#commentContainer").height($('.post').height()-$('#proposta').height()-$('#navegaComments').height());
 
     /* Loading comments from the first paragraph */
     var postIdExpr = $('input[name=comment_post_ID]');
@@ -806,7 +811,7 @@ $(document).ready(function () {
         <li><a href="#" title="Página 1">1</a></li>
         <li><a href="#" title="Página 2">2</a></li>
         <li><a href="#" title="Página 3">3</a></li>
-        <li><a href="#" title="Página 4">4</a></li>	
+        <li><a href="#" title="Página 4">4</a></li>
         <li><a href="#" title="Página 5">5</a></li>
       </ol>
       <form action="get">
@@ -821,3 +826,4 @@ $(document).ready(function () {
 </div>
 
 <?php get_footer(); ?>
+
