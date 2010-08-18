@@ -179,3 +179,15 @@ ul.tagColumn li {list-style:none none;}
 #footer{}
 #footer{}
 
+/* WORDPRESS CLASSES
+--------------------------------------------- */
+.alignleft{float:left;margin:0px 10px 0px 0px;}
+.alignright{float:right;margin:0px 0px 0px 10px;}
+.aligncenter{margin:auto;display:block;}
+
+/* ARCHIVE-POSTS
+--------------------------------------------- */
+.archive-post{clear:both;margin:20px 0 20px 0;border-bottom:1px solid #3797a5;}
+.archive-post .postmetadata{font-size:0.95em;font-weight:bold;}
+.archive-post h2{padding:10px 0 0 0;}
+.archive-post h2 a{font-size:1.15em;text-decoration:none;}

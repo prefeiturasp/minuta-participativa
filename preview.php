@@ -30,8 +30,10 @@
 
        /* Defining if this post is the selected one */
        $selected = $current_id == $post->ID ? 'select' : '';
+
+       if( is_home() and $selected == 'select') continue;
    ?>
-   
+
   <div class="preview-post <?php echo $selected; ?>">
     <h3>
       <a href="<?php bloginfo('url')?>/?pid=<?php /*<*/ echo $post->ID;?>">
