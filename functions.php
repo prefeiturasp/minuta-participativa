@@ -53,6 +53,19 @@ function get_nome_completo( $user_id )
     return (empty($nome_completo)) ? "Não informado" : $nome_completo;
 }
 
+function substr_to_next_white_space( $the_string, $length ) {
+
+  $end = $length - 1;
+  $s = substr($the_string, $length, 1);
+
+  while( $s != " ")
+  {
+    $length++;
+    $s = substr($the_string, $length , 1);
+  }
+
+  return substr($the_string, 0, $length);
+}
 /* -- Wordpress default stuff -- */
 
 automatic_feed_links();

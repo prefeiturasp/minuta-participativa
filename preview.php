@@ -50,11 +50,8 @@
           $content = $post->post_excerpt;
         else
           $content = $post->post_content;
-        $excerpt = strip_tags($content);
-        if (strlen($excerpt) > 152) {
-          $excerpt = substr($excerpt, 0, 152) . '...';
-        }
-        echo $excerpt;
+        
+        echo substr_to_next_white_space( strip_tags($content), 152 ) . " ...";
       ?>
     </p>
   </div>
