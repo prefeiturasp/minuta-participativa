@@ -194,6 +194,8 @@ function dialogue_preprocess_comment ($commentdata) {
 }
 add_filter ('preprocess_comment', 'dialogue_preprocess_comment');
 
+/* add theme options to direitoautoral */
+require_once ( get_template_directory() . '/theme-options.php' );
 
 ?>
 
