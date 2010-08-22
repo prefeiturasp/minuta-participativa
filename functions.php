@@ -197,5 +197,46 @@ add_filter ('preprocess_comment', 'dialogue_preprocess_comment');
 /* add theme options to direitoautoral */
 require_once ( get_template_directory() . '/theme-options.php' );
 
+/* custom callback function to display the comments */
+function direitoautoral_comment( $comment, $args, $depth )
+{
+  $GLOBALS['comment'] = $comment;
+  $user_segmento = get_usermeta($comment->user_id, "segmento");
+  if( empty( $user_segmento ) )
+    $user_segmento = "Não informado";
+
+  $direitoautoral_options = get_option('direitoautoral_config_theme_options');
+  ?>
+      <li <?php comment_class(empty( $args['has_children'] ) ? '' : 'parent') ?> id="comment-<?php comment_ID() ?>">
+		  <?php if ( 'div' != $args['style'] ) : ?>
+		    <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
+		  <?php endif; ?>
+		  <div class="comment-author vcard">
+		  <?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+		    <?php printf(__('<cite class="fn">%s</cite> <span class="says">says:</span>'), get_comment_author_link()) ?>
+        <?php if( is_array($direitoautoral_options) && array_key_exists('show_comment_data', $direitoautoral_options ) ) : ?>
+          <span class="user_comment_direitoautoral_data_container">
+            <span class="user_comment_direitoautoral_data">IP: <?php echo $comment->comment_author_IP; ?></span>
+            <span class="user_comment_direitoautoral_data">Área de Atuação: <?php echo $user_segmento; ?></span>
+          <span>
+		      </div>
+        <?php endif; ?>
+        <?php if ($comment->comment_approved == '0') : ?>
+		      <em><?php _e('Your comment is awaiting moderation.') ?></em>
+		      <br />
+        <?php endif; ?>
+
+		    <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'),'&nbsp;&nbsp;','') ?></div>
+
+		    <?php comment_text() ?>
+
+		    <div class="reply">
+        <?php comment_reply_link(array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+		    </div>
+      <?php if ( 'div' != $args['style'] ) : ?>
+		    </div>
+		  <?php endif; ?>
+  <?
+}
 ?>
 
