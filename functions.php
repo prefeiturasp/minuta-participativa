@@ -54,6 +54,8 @@ function get_nome_completo( $user_id )
 }
 
 function substr_to_next_white_space( $the_string, $length ) {
+  if( $the_string == "" )
+    return;
 
   $end = $length - 1;
   $s = substr($the_string, $length, 1);
@@ -66,6 +68,13 @@ function substr_to_next_white_space( $the_string, $length ) {
 
   return substr($the_string, 0, $length);
 }
+
+function substr_to_next_white_space_or_message( $the_string, $length, $message )
+{
+  $retVal = substr_to_next_white_space( $the_string, $length );
+  return ( $retVal == null ) ? $message : $retVal;
+}
+
 /* -- Wordpress default stuff -- */
 
 automatic_feed_links();
@@ -237,6 +246,62 @@ function direitoautoral_comment( $comment, $args, $depth )
 		    </div>
 		  <?php endif; ?>
   <?
+}
+
+/* */
+function search_contribuicoes( $search_query, $the_page )
+{
+  global $wpdb;
+  $total_per_page = 6;
+  $limit = $the_page * $total_per_page;
+  $sql_count = "select count(*) as total 
+        from  wp_direitoautoral_commentmeta as cm where 
+        (cm.meta_key = 'Proposta' or cm.meta_key = 'Justificativa') 
+        and cm.meta_value like '%" . $search_query . "%'";
+
+  $sql = "select
+          date_format(c.comment_date,'%d/%m/%Y') as comment_date_formated, 
+          cm.*, c.* 
+        from  
+          wp_direitoautoral_commentmeta as cm, wp_direitoautoral_comments c
+        where 
+          (cm.meta_key = 'Proposta' or cm.meta_key = 'Justificativa') 
+          and cm.meta_value like '%" . $search_query . "%' 
+          and c.comment_id = cm.comment_id and c.comment_approved = 1
+        limit " . $limit . ", " . ($limit + $total_per_page);
+
+  $comments_search = $wpdb->get_results($sql);
+  $comments_count = $wpdb->get_results($sql_count);
+  $comments_total = $comments_count[0]->total;
+  
+
+  $total_pages = $comments_total / $total_per_page;
+
+  $previous_link = ($the_page >= 1)? get_bloginfo('url') . "/?s=" . 
+                    $search_query . "&comments_page=" . ($the_page - 1) : "";
+
+  $next_link = ($the_page+1 <= $total_pages ) ? get_bloginfo('url') . "/?s=" . 
+                $search_query . "&comments_page=" . ($the_page + 1) : "";
+
+  $first_link = get_bloginfo('url') . "/?s=" . $search_query . "&comments_page=0";
+
+  $next_link_tag = ($the_page+1 <= $total_pages) ? 
+                      "<a href=\"{$next_link}\">Próximos</a>" : "";
+
+  $previous_link_tag = ($the_page >= 1) ? 
+                      "<a href=\"{$previous_link}\">Anteriores</a>" : "";
+  
+
+  $retVal = array();
+  $retVal['results'] = $comments_search;
+  $retVal['total'] = $comments_total;
+  $retVal['previous_link'] = $previous_link;
+  $retVal['next_link'] = $next_link;
+  $retVal['first_link'] = $first_link;
+  $retVal['next_link_tag'] = $next_link_tag;
+  $retVal['previous_link_tag'] = $previous_link_tag;
+  
+  return $retVal;
 }
 ?>
 
