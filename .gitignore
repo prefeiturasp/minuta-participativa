@@ -1,0 +1,7 @@
+.DS_Store
+assets/node_modules
+assets/dist
+assets/.tmp
+assets/.sass-cache
+assets/bower_components
+base-de-propostas/vendor

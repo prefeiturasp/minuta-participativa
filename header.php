@@ -1,73 +1,31 @@
-<!DOCTYPE HTML>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title><?php bloginfo('name'); ?></title>
-    <?php wp_enqueue_script('jquery'); ?>
-    <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-    <?php wp_head(); ?>
-    <?php global $BODY_CLASS; ?>
-    <link rel="alternate" type="application/rss+xml"
-          title="<?php bloginfo('name'); ?> RSS Feed"
-          href="<?php bloginfo('rss2_url'); ?>" />
-    <link rel="alternate" type="application/atom+xml"
-          title="<?php bloginfo('name'); ?> Atom Feed"
-          href="<?php bloginfo('atom_url'); ?>" />
-    <link rel="alternate" type="application/rss+xml"
-          title="<?php bloginfo('name'); ?> Comments RSS Feed"
-          href="<?php bloginfo('comments_rss2_url'); ?>" />
-    <link href="<?php bloginfo('stylesheet_url'); ?>"
-          rel="stylesheet" type="text/css" media="all" />
-  </head>
-  <body <?php body_class($BODY_CLASS); ?>>
-    <?php
-      /* A dirty hammer to include this ugly bar only in the
-       * production server. */
-      if (file_exists ('/var/www/www.cultura.gov.br/govbar/govbar.php'))
-        include('/var/www/www.cultura.gov.br/govbar/govbar.php');
-    ?>
-    <div id="acessibilidade" tabindex="1">
-      <ul>
-        <li><a href="#menu">Ir para o menu</a></li>
-        <li><a href="#content">Ir para o conteúdo</a></li>
-      </ul>
-    </div>
-    <div id="container">
-      <div id="header">
-        <h1>
-          <a href="<?php echo get_option('home'); ?>/" accesskey="1">
-            <?php bloginfo('name'); ?>
-          </a>
-        </h1>
-        <ul id="menu">
-          <li>
-            <a href="<?php echo get_option('home'); ?>/" title="INÍCIO">
-              INÍCIO
-            </a>
-          </li>
-          <?php wp_list_pages('title_li=&exclude=981'); ?>
-          <li>
-            <a href="<?php bloginfo('url') ?>/category/blog/noticias/"
-            title='NA MÍDIA'>NA MÍDIA</a>
-          </li>
-          <li>
-            <?php get_search_form(); ?>
-          </li>
-        </ul>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <span class="btCadastro">
-          <a href="<?php bloginfo('url')?>/termos-de-uso"
-             title="Para participar cadastre-se e leia os termos de uso">
-             Cadastre-se
-          </a>
-        </span>
+        <title><?php bloginfo('name'); ?></title>
+        <meta name="description" content="<?php bloginfo('description'); ?>">
 
-        <?php if (is_user_logged_in()) : ?>
-        <span class="btLogout">
-          <a href="<?php echo wp_logout_url(); ?>"
-             title="Sair do sistema">
-            Sair
-          </a>
-        </span>
-        <?php endif; ?>
-      </div><!--fim header-->
+        <meta property="og:title" content="<?php bloginfo('name'); ?>" />
+        <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/images/compartilhar.png" />
+        <meta property="og:description" content="<?php bloginfo('description'); ?>" />
+
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <script type="text/javascript">
+            window.blogUrl ='<?php bloginfo('home'); ?>';
+            window.templateUrl = '<?php bloginfo('stylesheet_directory'); ?>';
+        </script>
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="<?php bloginfo('stylesheet_directory'); ?>/scripts/vendor/modernizr.js"></script>
+        <!-- endbuild -->
+        <?php wp_head(); ?>
+    </head>
+    <body class="home page">

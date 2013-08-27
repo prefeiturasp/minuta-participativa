@@ -1,16 +1,19 @@
-     <div id="footer">
-        <ul>
-	  <li><a href="http://www.cultura.gov.br/consultadireitoautoral/termos-de-uso/" title="Termos de uso">Termos de uso</a></li>
-	  <li><a href="http://www.cultura.gov.br/consultadireitoautoral/sobre/" title="Sobre a Revisão da Lei de Direito Autoral">Sobre</a></li>
-	  <li><a href="http://www.cultura.gov.br/consultadireitoautoral/processo-colaborativo-2/"
-	  title="Sobre o processo de desenvolvimento da consulta colaborativa">Processo Colaborativo</a></li>
-	  <li><a href="http://culturadigital.br/" title="Acesso ao Cultura Digital">Cultura Digital</a></li>
-	  <li><a href="http://www.wordpress.org/" title="Plataforma de publicação de conteúdo e blogs" target="_blank">Wordpress</a></li>
-	  <li><a href="http://xemele.cultura.gov.br/git" title="Repositório de código do Cultura Digital" target="_blank">Código Fonte</a></li>
-	  <li><a href="http://www.cultura.gov.br/consultadireitoautoral/wp-login.php?action=register" title="Cadastre-se">Cadastre-se</a></li>
-	</ul>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create', 'UA-43470077-1', 'sp.gov.br');ga('send', 'pageview');
+        </script>
+
+        <script data-main="<?php bloginfo('stylesheet_directory'); ?>/assets/scripts/main" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/require.js"></script>
         <?php wp_footer(); ?>
-      </div><!--fim #footer-->
-    </div><!--fim #container-->
-  </body>
+</body>
 </html>

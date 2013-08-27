@@ -1,28 +1,24 @@
 <?php
 
-function my_admin_init() {
-  add_action( 'manage_comments_custom_column', 'edit_comment_author_column' );
-  add_filter('manage_edit-comments_columns', 'custom_manage_comment_columns');
+function my_login_logo() { ?>
+    <style type="text/css">
+        body.login div#login h1 a {
+            background-image: url(<?php echo get_bloginfo( 'template_directory' ) ?>/images/logo-gestao_urbana.png);
+            padding-bottom: 30px;
+            background-size: 90%;
+            background-position: 50% 50%;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+function admin_default_page() {
+  return '/';
 }
 
-function custom_manage_comment_columns ($cols) {
-  $cols['dados_autor'] = 'Nome Completo e Tipo de Colaboração';
-  return $cols;
-}
+add_filter('login_redirect', 'admin_default_page');
 
-function edit_comment_author_column($col_title, $id = 0){
-
-  if($col_title == 'dados_autor') {
-    $comment = get_comment ($id, ARRAY_A);
-    $nomecompleto = get_nome_completo($comment['user_id']);
-    $descricao_tipo_contribuicao =
-        get_descricao_tipo_contribuicao($comment['user_id']);
-
-    echo("<strong>{$nomecompleto}</strong><br/>{$descricao_tipo_contribuicao}");
-  }
-}
-
-add_action( 'admin_init', 'my_admin_init' );
+show_admin_bar(false);
 
 /* --  foobar functions -- */
 
@@ -104,82 +100,30 @@ if (function_exists('register_sidebar')) {
 /* Holds the current post being shown at index.php and page.php */
 $current_post = null;
 
-function da_show_user_profile($user) {
-  include('userprofile/admin.php');
-}
-add_action('show_user_profile', 'da_show_user_profile');
-add_action('edit_user_profile', 'da_show_user_profile');
-
-function da_show_user_profile_regform() {
-  include('userprofile/site.php');
-}
-add_action('register_form','da_show_user_profile_regform');
-
 /* Specific validation functions */
 
-function da_validate_br_cpf($cpf) {
-  $cpf = str_pad(ereg_replace('[^0-9]', '', $cpf), 11, '0', STR_PAD_LEFT);
+function da_validate_br_cep($cep) {
+    // retira espacos em branco
+    $cep = trim($cep);
+    // expressao regular para avaliar o cep
+    $avaliaCep = preg_match("/^[0-9]{5}-[0-9]{3}$/", $cep);
 
-  if (strlen($cpf) != 11)
-    return false;
-  for ($i = 0; $i <= 9; $i++) {
-    $obvious_value = '';
-    for ($j = 0; $j < 11; $j++)
-      $obvious_value .= $i;
-    if ($cpf == $obvious_value)
-      return false;
-  }
-
-  for ($v = 9; $v < 11; $v++) {
-    for ($d = 0, $c = 0; $c < $v; $c++)
-      $d += $cpf{$c} * (($v + 1) - $c);
-    if ($cpf{$c} != ((10 * $d) % 11) % 10)
-      return false;
-  }
-  return true;
+    // verifica o resultado
+    if(!$avaliaCep) {
+        return false;
+    } else {
+        return true;
+    }
 }
 
 function da_validate_register_fields($login, $email, $errors) {
-  /* User did not agree with terms or user, kick him!!! :D */
-  if (!isset($_POST['agreeWithTermsOfUse']))
-    $errors->add('form_erros',
-                 '<strong>ERRO:</strong> Você precisa ler e aceitar ' .
-                 'os termos de uso do site para prosseguir');
-
-  /* List of required fields */
-  $fields = array('cpf', 'estado', 'cidade', 'segmento', 'manifestacao',
-                  'nomecompleto');
-  foreach ($fields as $field) {
-    if (trim($_POST[$field]) == '')
-      $errors->add('form_erros',
-          "<strong>ERRO:</strong> O campo $field está vazio");
-  }
-
-  /* Dependency validation */
-  if (trim($_POST['manifestacao']) == 'institucional' &&
-      trim($_POST['instituicao']) == '') {
-    $errors->add('form_errors',
-                 '<strong>ERRO:</strong> O campo instituição está vazio');
-  }
-
   /* Specific validation */
-  if (trim($_POST['cpf']) != '' && !da_validate_br_cpf($_POST['cpf']))
+  var_dump($_POST);
+  if (trim($_POST['cep']) != '' && !da_validate_br_cep($_POST['cep']))
     $errors->add('form_errors',
-                 '<strong>ERRO:</strong> O CPF informado é inválido');
+                 '<strong>ERRO:</strong> O CEP informado é inválido');
 }
 add_action('register_post', 'da_validate_register_fields', 10, 3);
-
-function da_register_extra_fields($user_id, $password="", $meta=array()) {
-  /* list of all extra fields being inserted in the user entity */
-  $fields = array('cpf', 'estado', 'cidade', 'segmento', 'manifestacao',
-                  'nomecompleto', 'instituicao');
-
-  /* Thanks to da_validade_register_fields we don't need to validate
-   * fields here. */
-  foreach ($fields as $field)
-    update_usermeta($user_id, $field, $_POST[$field]);
-}
-add_action('user_register', 'da_register_extra_fields');
 
 /* Customizing comment data. This should only affect comments of posts
  * with dialogue enabled. */
@@ -245,7 +189,7 @@ function direitoautoral_comment( $comment, $args, $depth )
       <?php if ( 'div' != $args['style'] ) : ?>
 		    </div>
 		  <?php endif; ?>
-  <?
+  <?php
 }
 
 /* */
@@ -254,43 +198,43 @@ function search_contribuicoes( $search_query, $the_page )
   global $wpdb;
   $total_per_page = 6;
   $limit = $the_page * $total_per_page;
-  $sql_count = "select count(*) as total 
-        from  wp_direitoautoral_commentmeta as cm where 
-        (cm.meta_key = 'Proposta' or cm.meta_key = 'Justificativa') 
+  $sql_count = "select count(*) as total
+        from  wp_direitoautoral_commentmeta as cm where
+        (cm.meta_key = 'Proposta' or cm.meta_key = 'Justificativa')
         and cm.meta_value like '%" . $search_query . "%'";
 
   $sql = "select
-          date_format(c.comment_date,'%d/%m/%Y') as comment_date_formated, 
-          cm.*, c.* 
-        from  
+          date_format(c.comment_date,'%d/%m/%Y') as comment_date_formated,
+          cm.*, c.*
+        from
           wp_direitoautoral_commentmeta as cm, wp_direitoautoral_comments c
-        where 
-          (cm.meta_key = 'Proposta' or cm.meta_key = 'Justificativa') 
-          and cm.meta_value like '%" . $search_query . "%' 
+        where
+          (cm.meta_key = 'Proposta' or cm.meta_key = 'Justificativa')
+          and cm.meta_value like '%" . $search_query . "%'
           and c.comment_id = cm.comment_id and c.comment_approved = 1
         limit " . $limit . ", " . ($limit + $total_per_page);
 
   $comments_search = $wpdb->get_results($sql);
   $comments_count = $wpdb->get_results($sql_count);
   $comments_total = $comments_count[0]->total;
-  
+
 
   $total_pages = $comments_total / $total_per_page;
 
-  $previous_link = ($the_page >= 1)? get_bloginfo('url') . "/?s=" . 
+  $previous_link = ($the_page >= 1)? get_bloginfo('url') . "/?s=" .
                     $search_query . "&comments_page=" . ($the_page - 1) : "";
 
-  $next_link = ($the_page+1 <= $total_pages ) ? get_bloginfo('url') . "/?s=" . 
+  $next_link = ($the_page+1 <= $total_pages ) ? get_bloginfo('url') . "/?s=" .
                 $search_query . "&comments_page=" . ($the_page + 1) : "";
 
   $first_link = get_bloginfo('url') . "/?s=" . $search_query . "&comments_page=0";
 
-  $next_link_tag = ($the_page+1 <= $total_pages) ? 
+  $next_link_tag = ($the_page+1 <= $total_pages) ?
                       "<a href=\"{$next_link}\">Próximos</a>" : "";
 
-  $previous_link_tag = ($the_page >= 1) ? 
+  $previous_link_tag = ($the_page >= 1) ?
                       "<a href=\"{$previous_link}\">Anteriores</a>" : "";
-  
+
 
   $retVal = array();
   $retVal['results'] = $comments_search;
@@ -300,8 +244,10 @@ function search_contribuicoes( $search_query, $the_page )
   $retVal['first_link'] = $first_link;
   $retVal['next_link_tag'] = $next_link_tag;
   $retVal['previous_link_tag'] = $previous_link_tag;
-  
+
   return $retVal;
 }
-?>
 
+remove_filter( 'the_content', 'wpautop' );
+//add_filter( 'the_content', 'wpautop' , 12);
+?>
