@@ -1,0 +1,13 @@
+{
+    "require": {
+        "slim/slim": "2.*",
+        "illuminate/database": "*",
+        "entomb/slim-json-api": "dev-master",
+        "goodby/csv": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "app/models"
+        ]
+    }
+}
