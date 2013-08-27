@@ -1,0 +1,138 @@
+.comment-pp {
+    margin: 0 0 10px 0;
+    &.active .comment-text {
+        background-color: #ffffcc;
+    }
+    p.comment-text {
+        display: inline;
+        &:hover {
+            background-color: #ffffcc;
+            cursor: pointer;
+        }
+        a {
+            i {
+                margin:0 5px;
+            }
+            margin: 0 0 0 5px;
+            font-size: 120%;
+            background-color: #fff;
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+}
+.comment-form {
+    display: none;
+    background-color: $secondary-color;
+    border-radius: 5px;
+    margin: 15px 0;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, .5);
+
+    h6 {
+        position: relative;
+        background: $primary-color;
+        color: #fff;
+        padding: 10px;
+        margin:0;
+        border-radius: 5px 5px 0 0;
+        font-family: 'museoSlab', sans-serif;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 100%;
+
+
+        i {
+            margin: 0 10px 0 0;
+        }
+    }
+    h6:after {
+        bottom: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    h6:after {
+        border-color: rgba(215, 50, 47, 0);
+        border-bottom-color: $primary-color;
+        border-width: 8px;
+        left: 5%;
+        margin-left: -8px;
+    }
+
+    .message,
+    .loading {
+        display:none;
+    }
+
+    form > ol {
+        margin:0;
+        padding:25px 25px 0;
+        & > li {
+            list-style: none;
+            padding: 0 0 25px 0;
+
+            &.contribContainer,
+            &.agreed {
+                display:none;
+            }
+
+            &.agreed {
+                ol li label {
+                    color: #666;
+                }
+            }
+
+            label {
+                display: block;
+                margin: 0 0 10px 0;
+            }
+
+            .minict_wrapper {
+                width: 350px;
+                input,
+                ul li {
+                    font-size: 90%;
+                }
+            }
+
+            textarea {
+                width: 100%;
+                height: 100px;
+                border:0;
+                &.new_text {
+                    display: none;
+                }
+            }
+
+            ol {
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;
+                }
+            }
+            .send-comment,
+            .cancel-comment {
+                font-size: 20px;
+                line-height: 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                i {
+                    //font-size: 28px;
+                    margin: 0 10px 0 0;
+                }
+            }
+            .send-comment {
+                color: $primary-color;
+                float: right;
+            }
+            .cancel-comment {
+                color: #666;
+            }
+        }
+    }
+}

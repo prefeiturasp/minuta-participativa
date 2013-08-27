@@ -1,0 +1,23 @@
+$primary-color: #d7322f;
+$secondary-color: #f2f2f2;
+$third-color: #231f20;
+
+@import "../bower_components/minimalect/jquery.minimalect";
+@import "pure-min";
+@import "fonts";
+
+body {
+    background: #fff;
+    font-family: "Droid Sans", sans-serif;
+    color: $third-color;
+}
+.pure-g-r > div {
+        box-sizing: border-box;
+}
+
+@import "fb-buttons";
+@import "header";
+@import "content";
+@import "sidebar";
+@import "related-content";
+@import "intro";
