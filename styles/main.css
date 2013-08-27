@@ -1,0 +1,6801 @@
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans:400,700");
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.minict_wrapper {
+  font-family: "Segoe UI", Segoe, "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+  color: #333;
+  background: #fff;
+  position: relative;
+  width: 300px;
+  height: 2.2rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.minict_wrapper * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \0000322;
+  }
+}
+
+.minict_wrapper:after {
+  content: "\25BC";
+  display: block;
+  position: absolute;
+  height: 2.1rem;
+  width: 2.1rem;
+  top: 0;
+  right: 0;
+  font-size: 0.6rem;
+  line-height: 1.9rem;
+  text-align: center;
+  color: #555;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \0000336;
+  }
+}
+
+.minict_wrapper.active:after {
+  content: "\25B2";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \0000340;
+  }
+}
+
+.minict_wrapper input {
+  border: 0;
+  outline: none;
+  background: none;
+  font-family: "Segoe UI", Segoe, "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 1rem;
+  height: 1.9rem;
+  padding: 0 2.2rem 0 0.4rem;
+  cursor: default;
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \0000353;
+  }
+}
+
+.minict_wrapper ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  top: 2rem;
+  left: 0;
+  max-height: 22rem;
+  overflow-y: auto;
+  z-index: 999999;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \0000368;
+  }
+}
+
+.minict_wrapper ul li {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0 0.7rem;
+  cursor: pointer;
+  background: #fff;
+  height: 2.2rem;
+  line-height: 2rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \0000377;
+  }
+}
+
+.minict_wrapper ul li:hover {
+  background: #fcfcfc;
+  color: #111;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \0000382;
+  }
+}
+
+.minict_wrapper ul li.minict_group {
+  color: #444;
+  background: #f6f6f6;
+  font-weight: bold;
+  cursor: default;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \0000389;
+  }
+}
+
+.minict_wrapper ul li.minict_empty {
+  display: none;
+  background: #fff !important;
+  color: #bbb;
+  text-align: center;
+  font-size: 0.9rem;
+  height: 3.5rem;
+  line-height: 3.3rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \0000399;
+  }
+}
+
+.minict_wrapper ul li.selected {
+  color: #819a9a;
+  background: #f9fcff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \00003104;
+  }
+}
+
+.minict_wrapper ul li.highlighted {
+  color: #fff;
+  background: #819a9a;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \00003109;
+  }
+}
+
+.minict_wrapper ul li.hidden {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \00003118;
+  }
+}
+
+.minict_wrapper.bubble {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.05);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f9f9f9));
+  background: -webkit-linear-gradient(top, white 0%, #f9f9f9 100%);
+  background: -ms-linear-gradient(top, white 0%, #f9f9f9 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f9f9f9 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \00003128;
+  }
+}
+
+.minict_wrapper.bubble:hover {
+  border-color: #dcdcdc;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \00003132;
+  }
+}
+
+.minict_wrapper.bubble:after {
+  border-left: 1px solid #e5e5e5;
+  box-shadow: inset 1px 0px 0px 0px #fff;
+  height: 2.05rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \00003139;
+  }
+}
+
+.minict_wrapper.bubble ul {
+  top: 2.7rem;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  overflow: visible;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \00003146;
+  }
+}
+
+.minict_wrapper.bubble ul:before {
+  position: absolute;
+  top: -11px;
+  left: 19px;
+  content: ".";
+  color: transparent;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 11px 11px 11px;
+  border-color: transparent transparent #e5e5e5 transparent;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \00003159;
+  }
+}
+
+.minict_wrapper.bubble ul:after {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  content: ".";
+  color: transparent;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \00003172;
+  }
+}
+
+.minict_wrapper.bubble ul li.minict_first {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/bower_components\/minimalect\/jquery\.minimalect\.scss;
+  }
+
+  line {
+    font-family: \00003176;
+  }
+}
+
+.minict_wrapper.bubble ul li.minict_last {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/*
+Pure v0.2.1
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yui/pure/blob/master/LICENSE.md
+*/
+
+/*
+normalize.css v1.1.2 | MIT License | git.io/normalize
+Copyright (c) Nicolas Gallagher and Jonathan Neal
+*/
+
+/* normalize.css v1.1.2 | MIT License | git.io/normalize */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+[hidden] {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+html {
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: .83em 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+h5 {
+  font-size: .83em;
+  margin: 1.67em 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+h6 {
+  font-size: .67em;
+  margin: 2.33em 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+dfn {
+  font-style: italic;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+p,
+pre {
+  margin: 1em 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace,serif;
+  _font-family: 'courier new',monospace;
+  font-size: 1em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+q {
+  quotes: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+small {
+  font-size: 80%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+sup {
+  top: -.5em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+sub {
+  bottom: -.25em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+form {
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+input[type=checkbox],
+input[type=radio] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.pure-button {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: baseline;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.pure-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.pure-button {
+  font-size: 100%;
+  *font-size: 90%;
+  *overflow: visible;
+  padding: .5em 1.5em;
+  color: #444;
+  color: rgba(0, 0, 0, 0.8);
+  *color: #444;
+  border: 1px solid #999;
+  border: 0 rgba(0, 0, 0, 0);
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-font-smoothing: antialiased;
+  -ms-transition: .1s linear box-shadow;
+  transition: .1s linear box-shadow;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.pure-button-hover,
+.pure-button:hover,
+.pure-button:focus {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.pure-button:focus {
+  outline: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.pure-button-active,
+.pure-button:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.pure-button[disabled],
+.pure-button-disabled,
+.pure-button-disabled:hover,
+.pure-button-disabled:focus,
+.pure-button-disabled:active {
+  border: 0;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  -webkit-filter: alpha(opacity=40);
+  filter: alpha(opacity=40);
+  -khtml-opacity: .4;
+  -moz-opacity: .4;
+  opacity: .4;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.pure-button-hidden {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.pure-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.pure-button-primary,
+.pure-button-selected,
+a.pure-button-primary,
+a.pure-button-selected {
+  background-color: #0078e7;
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form {
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form button,
+.pure-form input,
+.pure-form select,
+.pure-form textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form button,
+.pure-form input {
+  line-height: normal;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form button,
+.pure-form input[type=button],
+.pure-form input[type=reset],
+.pure-form input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form button[disabled],
+.pure-form input[disabled] {
+  cursor: default;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form input[type=checkbox],
+.pure-form input[type=radio] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form input[type=search]::-webkit-search-cancel-button,
+.pure-form input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form button::-moz-focus-inner,
+.pure-form input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form input[type=text],
+.pure-form input[type=password],
+.pure-form input[type=email],
+.pure-form input[type=url],
+.pure-form input[type=date],
+.pure-form input[type=month],
+.pure-form input[type=time],
+.pure-form input[type=datetime],
+.pure-form input[type=datetime-local],
+.pure-form input[type=week],
+.pure-form input[type=number],
+.pure-form input[type=search],
+.pure-form input[type=tel],
+.pure-form input[type=color],
+.pure-form select,
+.pure-form textarea {
+  padding: .5em .6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  font-size: .8em;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  -webkit-transition: .3s linear border;
+  -ms-transition: .3s linear border;
+  transition: .3s linear border;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form input[type=text]:focus,
+.pure-form input[type=password]:focus,
+.pure-form input[type=email]:focus,
+.pure-form input[type=url]:focus,
+.pure-form input[type=date]:focus,
+.pure-form input[type=month]:focus,
+.pure-form input[type=time]:focus,
+.pure-form input[type=datetime]:focus,
+.pure-form input[type=datetime-local]:focus,
+.pure-form input[type=week]:focus,
+.pure-form input[type=number]:focus,
+.pure-form input[type=search]:focus,
+.pure-form input[type=tel]:focus,
+.pure-form input[type=color]:focus,
+.pure-form select:focus,
+.pure-form textarea:focus {
+  outline: 0;
+  outline: thin dotted \9;
+  border-color: #129FEA;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form input[type=file]:focus,
+.pure-form input[type=radio]:focus,
+.pure-form input[type=checkbox]:focus {
+  outline: thin dotted #333;
+  outline: 1px auto #129FEA;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-checkbox,
+.pure-form .pure-radio {
+  margin: .5em 0;
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form input[type=text][disabled],
+.pure-form input[type=password][disabled],
+.pure-form input[type=email][disabled],
+.pure-form input[type=url][disabled],
+.pure-form input[type=date][disabled],
+.pure-form input[type=month][disabled],
+.pure-form input[type=time][disabled],
+.pure-form input[type=datetime][disabled],
+.pure-form input[type=datetime-local][disabled],
+.pure-form input[type=week][disabled],
+.pure-form input[type=number][disabled],
+.pure-form input[type=search][disabled],
+.pure-form input[type=tel][disabled],
+.pure-form input[type=color][disabled],
+.pure-form select[disabled],
+.pure-form textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form input[readonly],
+.pure-form select[readonly],
+.pure-form textarea[readonly],
+.pure-form input[readonly]:focus,
+.pure-form select[readonly]:focus,
+.pure-form textarea[readonly]:focus {
+  background: #eee;
+  color: #777;
+  border-color: #ccc;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form input:focus:invalid,
+.pure-form textarea:focus:invalid,
+.pure-form select:focus:invalid {
+  color: #b94a48;
+  border: 1px solid #ee5f5b;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form input:focus:invalid:focus,
+.pure-form textarea:focus:invalid:focus,
+.pure-form select:focus:invalid:focus {
+  border-color: #e9322d;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form input[type=file]:focus:invalid:focus,
+.pure-form input[type=radio]:focus:invalid:focus,
+.pure-form input[type=checkbox]:focus:invalid:focus {
+  outline-color: #e9322d;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form select {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form select[multiple] {
+  height: auto;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form label {
+  margin: .5em 0 .2em;
+  font-size: 90%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form fieldset {
+  margin: 0;
+  padding: .35em 0 .75em;
+  border: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form legend {
+  display: block;
+  width: 100%;
+  padding: .3em 0;
+  margin-bottom: .3em;
+  font-size: 125%;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form-stacked input[type=text],
+.pure-form-stacked input[type=password],
+.pure-form-stacked input[type=email],
+.pure-form-stacked input[type=url],
+.pure-form-stacked input[type=date],
+.pure-form-stacked input[type=month],
+.pure-form-stacked input[type=time],
+.pure-form-stacked input[type=datetime],
+.pure-form-stacked input[type=datetime-local],
+.pure-form-stacked input[type=week],
+.pure-form-stacked input[type=number],
+.pure-form-stacked input[type=search],
+.pure-form-stacked input[type=tel],
+.pure-form-stacked input[type=color],
+.pure-form-stacked select,
+.pure-form-stacked label,
+.pure-form-stacked textarea {
+  display: block;
+  margin: .25em 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form-aligned input,
+.pure-form-aligned textarea,
+.pure-form-aligned select,
+.pure-form-aligned .pure-help-inline,
+.pure-form-message-inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form-aligned .pure-control-group {
+  margin-bottom: .5em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form-aligned .pure-control-group label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  margin: 0 1em 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form-aligned .pure-controls {
+  margin: 1.5em 0 0 10em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form input.pure-input-rounded,
+.pure-form .pure-input-rounded {
+  border-radius: 2em;
+  padding: .5em 1em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-group fieldset {
+  margin-bottom: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-group input {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  border-radius: 0;
+  position: relative;
+  top: -1px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-group input:focus {
+  z-index: 2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-group input:first-child {
+  top: 1px;
+  border-radius: 4px 4px 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-group input:last-child {
+  top: -2px;
+  border-radius: 0 0 4px 4px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-group button {
+  margin: .35em 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-input-1 {
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-input-2-3 {
+  width: 66%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-input-1-2 {
+  width: 50%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-input-1-3 {
+  width: 33%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-input-1-4 {
+  width: 25%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form .pure-help-inline,
+.pure-form-message-inline {
+  display: inline-block;
+  padding-left: .3em;
+  color: #666;
+  vertical-align: middle;
+  font-size: 90%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.pure-form-message {
+  display: block;
+  color: #666;
+  font-size: 90%;
+}
+
+@media only screen and (max-width: 480px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000313;
+    }
+}
+
+  .pure-form button[type=submit] {
+    margin: .7em 0 0;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000313;
+    }
+}
+
+  .pure-form input[type=text],
+  .pure-form input[type=password],
+  .pure-form input[type=email],
+  .pure-form input[type=url],
+  .pure-form input[type=date],
+  .pure-form input[type=month],
+  .pure-form input[type=time],
+  .pure-form input[type=datetime],
+  .pure-form input[type=datetime-local],
+  .pure-form input[type=week],
+  .pure-form input[type=number],
+  .pure-form input[type=search],
+  .pure-form input[type=tel],
+  .pure-form input[type=color],
+  .pure-form label {
+    margin-bottom: .3em;
+    display: block;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000313;
+    }
+}
+
+  .pure-group input[type=text],
+  .pure-group input[type=password],
+  .pure-group input[type=email],
+  .pure-group input[type=url],
+  .pure-group input[type=date],
+  .pure-group input[type=month],
+  .pure-group input[type=time],
+  .pure-group input[type=datetime],
+  .pure-group input[type=datetime-local],
+  .pure-group input[type=week],
+  .pure-group input[type=number],
+  .pure-group input[type=search],
+  .pure-group input[type=tel],
+  .pure-group input[type=color] {
+    margin-bottom: 0;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000313;
+    }
+}
+
+  .pure-form-aligned .pure-control-group label {
+    margin-bottom: .3em;
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000313;
+    }
+}
+
+  .pure-form-aligned .pure-controls {
+    margin: 1.5em 0 0;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000313;
+    }
+}
+
+  .pure-form .pure-help-inline,
+  .pure-form-message-inline,
+  .pure-form-message {
+    display: block;
+    font-size: 80%;
+    padding: .2em 0 .8em;
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-g {
+  letter-spacing: -.31em;
+  *letter-spacing: normal;
+  *word-spacing: -.43em;
+  text-rendering: optimizespeed;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.opera-only :-o-prefocus,
+.pure-g {
+  word-spacing: -.43em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-1,
+.pure-u-1-2,
+.pure-u-1-3,
+.pure-u-2-3,
+.pure-u-1-4,
+.pure-u-3-4,
+.pure-u-1-5,
+.pure-u-2-5,
+.pure-u-3-5,
+.pure-u-4-5,
+.pure-u-1-6,
+.pure-u-5-6,
+.pure-u-1-8,
+.pure-u-3-8,
+.pure-u-5-8,
+.pure-u-7-8,
+.pure-u-1-12,
+.pure-u-5-12,
+.pure-u-7-12,
+.pure-u-11-12,
+.pure-u-1-24,
+.pure-u-5-24,
+.pure-u-7-24,
+.pure-u-11-24,
+.pure-u-13-24,
+.pure-u-17-24,
+.pure-u-19-24,
+.pure-u-23-24 {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-1 {
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-1-2 {
+  width: 50%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-1-3 {
+  width: 33.33333%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-2-3 {
+  width: 66.66666%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-1-4 {
+  width: 25%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-3-4 {
+  width: 75%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-1-5 {
+  width: 20%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-2-5 {
+  width: 40%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-3-5 {
+  width: 60%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-4-5 {
+  width: 80%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-1-6 {
+  width: 16.666%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-5-6 {
+  width: 83.33%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-1-8 {
+  width: 12.5%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-3-8 {
+  width: 37.5%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-5-8 {
+  width: 62.5%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-7-8 {
+  width: 87.5%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-1-12 {
+  width: 8.3333%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-5-12 {
+  width: 41.6666%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-7-12 {
+  width: 58.3333%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-11-12 {
+  width: 91.6666%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-1-24 {
+  width: 4.1666%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-5-24 {
+  width: 20.8333%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-7-24 {
+  width: 29.1666%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-11-24 {
+  width: 45.8333%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-13-24 {
+  width: 54.1666%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-17-24 {
+  width: 70.8333%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-19-24 {
+  width: 79.1666%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-u-23-24 {
+  width: 95.8333%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-g-r {
+  letter-spacing: -.31em;
+  *letter-spacing: normal;
+  *word-spacing: -.43em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.opera-only :-o-prefocus,
+.pure-g-r {
+  word-spacing: -.43em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-g-r img {
+  max-width: 100%;
+}
+
+@media (min-width: 980px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000314;
+    }
+}
+
+  .pure-visible-phone {
+    display: none;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000314;
+    }
+}
+
+  .pure-visible-tablet {
+    display: none;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000314;
+    }
+}
+
+  .pure-hidden-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000314;
+    }
+}
+
+  .pure-g-r > .pure-u,
+  .pure-g-r > [class*="pure-u-"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000314;
+    }
+}
+
+  .pure-g-r > .pure-u,
+  .pure-g-r > [class*="pure-u-"] {
+    width: 100%;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000314;
+    }
+}
+
+  .pure-hidden-phone {
+    display: none;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000314;
+    }
+}
+
+  .pure-visible-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000314;
+    }
+}
+
+  .pure-hidden-tablet {
+    display: none;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000314;
+    }
+}
+
+  .pure-visible-desktop {
+    display: none;
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu.pure-menu-open {
+  visibility: visible;
+  z-index: 2;
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu ul {
+  left: -10000px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  top: -10000px;
+  z-index: 1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu > ul {
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-open > ul {
+  left: 0;
+  top: 0;
+  visibility: visible;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-open > ul:focus {
+  outline: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu li {
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu a,
+.pure-menu .pure-menu-heading {
+  display: block;
+  color: inherit;
+  line-height: 1.5em;
+  padding: 5px 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu.pure-menu-horizontal > .pure-menu-heading {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin: 0;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu.pure-menu-horizontal > ul {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  height: 2.4em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu li a {
+  padding: 5px 20px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-can-have-children > .pure-menu-label:after {
+  content: '\25B8';
+  float: right;
+  font-family: 'Lucida Grande','Lucida Sans Unicode','DejaVu Sans',sans-serif;
+  margin-right: -20px;
+  margin-top: -1px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-can-have-children > .pure-menu-label {
+  padding-right: 30px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-separator {
+  background-color: #dfdfdf;
+  display: block;
+  height: 1px;
+  font-size: 0;
+  margin: 7px 2px;
+  overflow: hidden;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-hidden {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-horizontal li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-horizontal li li {
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label:after {
+  content: "\25BE";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-horizontal > .pure-menu-children > .pure-menu-can-have-children > .pure-menu-label {
+  padding-right: 30px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-horizontal li.pure-menu-separator {
+  height: 50%;
+  width: 1px;
+  margin: 0 7px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu-horizontal li li.pure-menu-separator {
+  height: 1px;
+  width: auto;
+  margin: 7px 2px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu.pure-menu-open,
+.pure-menu.pure-menu-horizontal li .pure-menu-children {
+  background: #fff;
+  border: 1px solid #b7b7b7;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu.pure-menu-horizontal,
+.pure-menu.pure-menu-horizontal .pure-menu-heading {
+  border: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu a {
+  border: 1px solid transparent;
+  border-left: 0;
+  border-right: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu a,
+.pure-menu .pure-menu-can-have-children > li:after {
+  color: #777;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu .pure-menu-can-have-children > li:hover:after {
+  color: #fff;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu .pure-menu-open {
+  background: #dedede;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu li a:hover,
+.pure-menu li a:focus {
+  background: #eee;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu li.pure-menu-disabled a:hover,
+.pure-menu li.pure-menu-disabled a:focus {
+  background: #fff;
+  color: #bfbfbf;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu .pure-menu-disabled > a {
+  background-image: none;
+  border-color: transparent;
+  cursor: default;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu .pure-menu-disabled > a,
+.pure-menu .pure-menu-can-have-children.pure-menu-disabled > a:after {
+  color: #bfbfbf;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu .pure-menu-heading {
+  color: #565d64;
+  text-transform: uppercase;
+  font-size: 90%;
+  margin-top: .5em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #dfdfdf;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu .pure-menu-selected a {
+  color: #000;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-menu.pure-menu-open.pure-menu-fixed {
+  border: 0;
+  border-bottom: 1px solid #b7b7b7;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-paginator {
+  letter-spacing: -.31em;
+  *letter-spacing: normal;
+  *word-spacing: -.43em;
+  text-rendering: optimizespeed;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.opera-only :-o-prefocus,
+.pure-paginator {
+  word-spacing: -.43em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-paginator li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-paginator .pure-button {
+  border-radius: 0;
+  padding: .8em 1.4em;
+  vertical-align: top;
+  height: 1.1em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-paginator .pure-button:focus,
+.pure-paginator .pure-button:active {
+  outline-style: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-paginator .prev,
+.pure-paginator .next {
+  color: #C0C1C3;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.45);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-paginator .prev {
+  border-radius: 2px 0 0 2px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000315;
+  }
+}
+
+.pure-paginator .next {
+  border-radius: 0 2px 2px 0;
+}
+
+@media (max-width: 480px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000315;
+    }
+}
+
+  .pure-menu-horizontal {
+    width: 100%;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+    }
+
+    line {
+      font-family: \0000315;
+    }
+}
+
+  .pure-menu-children li {
+    display: block;
+    border-bottom: 1px solid #000;
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.pure-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #cbcbcb;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.pure-table caption {
+  color: #000;
+  font: italic 85%/1 arial,sans-serif;
+  padding: 1em 0;
+  text-align: center;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.pure-table td,
+.pure-table th {
+  border-left: 1px solid #cbcbcb;
+  border-width: 0 0 0 1px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 6px 12px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.pure-table td:first-child,
+.pure-table th:first-child {
+  border-left-width: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.pure-table thead {
+  background: #e0e0e0;
+  color: #000;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.pure-table td {
+  background-color: transparent;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.pure-table-odd td {
+  background-color: #f2f2f2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.pure-table-striped tr:nth-child(2n-1) td {
+  background-color: #f2f2f2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.pure-table-bordered td {
+  border-bottom: 1px solid #cbcbcb;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.pure-table-bordered tbody > tr:last-child td,
+.pure-table-horizontal tbody > tr:last-child td {
+  border-bottom-width: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.pure-table-horizontal td,
+.pure-table-horizontal th {
+  border-width: 0 0 1px;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_pure-min\.scss;
+  }
+
+  line {
+    font-family: \0000316;
+  }
+}
+
+.pure-table-horizontal tbody > tr:last-child td {
+  border-bottom-width: 0;
+}
+
+/**
+ * Fonts
+ */
+
+@font-face {
+  font-family: 'museoSlab';
+  src: url("../fonts/museo_slab_500-webfont.eot");
+  src: url("../fonts/museo_slab_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museo_slab_500-webfont.woff") format("woff"), url("../fonts/museo_slab_500-webfont.ttf") format("truetype"), url("../fonts/museo_slab_500-webfont.svg#museo_slab500") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_NeutraDisplay-Draft';
+  src: url("../fonts/NeutraDisplay-Draft.eot");
+  src: local("☺"), url("../fonts/NeutraDisplay-Draft.woff") format("woff"), url("../fonts/NeutraDisplay-Draft.ttf") format("truetype"), url("../fonts/NeutraDisplay-Draft.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000330;
+  }
+}
+
+.icon-youtube,
+.icon-twitter,
+.icon-text-return,
+.icon-text-remove,
+.icon-text-change,
+.icon-text-add,
+.icon-so-so,
+.icon-quadro,
+.icon-quadro-bg,
+.icon-propose,
+.icon-not-agree,
+.icon-map,
+.icon-map-bg,
+.icon-facebook,
+.icon-comment,
+.icon-comment-bg,
+.icon-book,
+.icon-arrow-rigth,
+.icon-agree,
+.icon-pencil,
+.icon-mail,
+.icon-print,
+.icon-cancel,
+.icon-arrow-down,
+.icon-close {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000340;
+  }
+}
+
+.icon-youtube:before {
+  content: "\e000";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000343;
+  }
+}
+
+.icon-twitter:before {
+  content: "\e001";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000346;
+  }
+}
+
+.icon-text-return:before {
+  content: "\e002";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000349;
+  }
+}
+
+.icon-text-remove:before {
+  content: "\e003";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000352;
+  }
+}
+
+.icon-text-change:before {
+  content: "\e004";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000355;
+  }
+}
+
+.icon-text-add:before {
+  content: "\e005";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000358;
+  }
+}
+
+.icon-so-so:before {
+  content: "\e006";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000361;
+  }
+}
+
+.icon-quadro:before {
+  content: "\e007";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000364;
+  }
+}
+
+.icon-quadro-bg:before {
+  content: "\e008";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000367;
+  }
+}
+
+.icon-propose:before {
+  content: "\e009";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000370;
+  }
+}
+
+.icon-not-agree:before {
+  content: "\e00a";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000373;
+  }
+}
+
+.icon-map:before {
+  content: "\e00b";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000376;
+  }
+}
+
+.icon-map-bg:before {
+  content: "\e00c";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000379;
+  }
+}
+
+.icon-facebook:before {
+  content: "\e00d";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000382;
+  }
+}
+
+.icon-comment:before {
+  content: "\e00e";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000385;
+  }
+}
+
+.icon-comment-bg:before {
+  content: "\e00f";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000388;
+  }
+}
+
+.icon-book:before {
+  content: "\e010";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000391;
+  }
+}
+
+.icon-arrow-rigth:before {
+  content: "\e011";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000394;
+  }
+}
+
+.icon-agree:before {
+  content: "\e012";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \0000397;
+  }
+}
+
+.icon-pencil:before {
+  content: "\e013";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \00003100;
+  }
+}
+
+.icon-mail:before {
+  content: "\e014";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \00003103;
+  }
+}
+
+.icon-print:before {
+  content: "\e015";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \00003106;
+  }
+}
+
+.icon-cancel:before {
+  content: "\e016";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \00003109;
+  }
+}
+
+.icon-arrow-down:before {
+  content: "\e017";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/fonts\/icones\/_style\.scss;
+  }
+
+  line {
+    font-family: \00003112;
+  }
+}
+
+.icon-close:before {
+  content: "\e018";
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \000039;
+  }
+}
+
+body {
+  background: #fff;
+  font-family: "Droid Sans", sans-serif;
+  color: #231f20;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.pure-g-r > div {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------
+CSS3 FACEBOOK-STYLE BUTTONS (Nicolas Gallagher)
+MIT License
+http://github.com/necolas/css3-facebook-buttons
+------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \0000310;
+  }
+}
+
+.uibutton {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+  display: inline-block;
+  padding: 0.3em 0.6em 0.375em;
+  border: 1px solid #999;
+  border-bottom-color: #888;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  font: bold 11px/normal 'lucida grande', tahoma, verdana, arial, sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+  /* outline: none; */
+  color: #333;
+  background-color: #eee;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f6f6), to(#e4e4e3));
+  background-image: -webkit-linear-gradient(#f5f6f6, #e4e4e3);
+  background-image: linear-gradient(#f5f6f6, #e4e4e3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f6f6', EndColorStr='#e4e4e3');
+  /* for IE 6 - 9 */
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 white;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \0000342;
+  }
+}
+
+.uibutton:hover,
+.uibutton:focus,
+.uibutton:active {
+  border-color: #777 #777 #666;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \0000346;
+  }
+}
+
+.uibutton:active {
+  border-color: #aaa;
+  background: #ddd;
+  -webkit-filter: none;
+  filter: none;
+  box-shadow: none;
+}
+
+/* overrides extra padding on button elements in Firefox */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \0000356;
+  }
+}
+
+.uibutton::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* ............................................................................................................. Icons */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \0000363;
+  }
+}
+
+.uibutton.icon:before {
+  content: "";
+  position: relative;
+  top: 1px;
+  float: left;
+  width: 10px;
+  height: 12px;
+  margin: 0 0.5em 0 0;
+  background: url(fb-icons.png) 99px 99px no-repeat;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \0000374;
+  }
+}
+
+.uibutton.edit:before {
+  background-position: 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \0000375;
+  }
+}
+
+.uibutton.add:before {
+  background-position: -10px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \0000376;
+  }
+}
+
+.uibutton.secure:before {
+  background-position: -20px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \0000377;
+  }
+}
+
+.uibutton.prev:before {
+  background-position: -30px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \0000378;
+  }
+}
+
+.uibutton.next:before {
+  float: right;
+  margin: 0 -0.25em 0 0.5em;
+  background-position: -40px 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON EXTENSIONS */
+
+/* ............................................................................................................. Large */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \0000384;
+  }
+}
+
+.uibutton.large {
+  font-size: 13px;
+}
+
+/* ............................................................................................................. Submit, etc */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \0000390;
+  }
+}
+
+.uibutton.confirm {
+  border-color: #29447e #29447e #1a356e;
+  color: #fff;
+  background-color: #5B74A8;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#637bad), to(#5872a7));
+  background-image: -webkit-linear-gradient(#637bad, #5872a7);
+  background-image: linear-gradient(#637bad, #5872a7);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#637bad', EndColorStr='#5872a7');
+  /* for IE 6 - 9 */
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003104;
+  }
+}
+
+.uibutton.confirm:active {
+  border-color: #29447E;
+  background: #4F6AA3;
+  -webkit-filter: none;
+  filter: none;
+  box-shadow: none;
+}
+
+/* ............................................................................................................. Special */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003115;
+  }
+}
+
+.uibutton.special {
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  color: #fff;
+  background-color: #69a74e;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#75ae5c), to(#67a54b));
+  background-image: -webkit-linear-gradient(#75ae5c, #67a54b);
+  background-image: linear-gradient(#75ae5c, #67a54b);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#75ae5c', EndColorStr='#67a54b');
+  /* for IE 6 - 9 */
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #98c286;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003129;
+  }
+}
+
+.uibutton.special:active {
+  border-color: #3b6e22;
+  background: #609946;
+  -webkit-filter: none;
+  filter: none;
+  box-shadow: none;
+}
+
+/* ............................................................................................................. Disable */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003140;
+  }
+}
+
+.uibutton.disable {
+  z-index: 0;
+  border-color: #c8c8c8;
+  color: #b8b8b8;
+  background: #f2f2f2;
+  cursor: default;
+  box-shadow: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003151;
+  }
+}
+
+.uibutton.confirm.disable {
+  color: #fff;
+  border-color: #94a2bf;
+  background: #adbad4;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003157;
+  }
+}
+
+.uibutton.special.disable {
+  color: #fff;
+  border-color: #9db791;
+  background: #b4d3a7;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003164;
+  }
+}
+
+.uibutton.disable.icon:before,
+.uibutton.disable.icon:after {
+  opacity: 0.5;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON GROUPS */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003170;
+  }
+}
+
+.uibutton-group {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003183;
+  }
+}
+
+.uibutton + .uibutton,
+.uibutton + .uibutton-group,
+.uibutton-group + .uibutton,
+.uibutton-group + .uibutton-group {
+  margin-left: 3px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003187;
+  }
+}
+
+.uibutton-group li {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003193;
+  }
+}
+
+.uibutton-group .uibutton {
+  float: left;
+  margin-left: -1px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003200;
+  }
+}
+
+.uibutton-group .uibutton:hover,
+.uibutton-group .uibutton:focus,
+.uibutton-group .uibutton:active {
+  z-index: 2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003205;
+  }
+}
+
+.uibutton-group > .uibutton:first-child,
+.uibutton-group li:first-child .uibutton {
+  margin-left: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- BUTTON CONTAINER */
+
+/* For mixing buttons and button groups, e.g., in a navigation bar */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003212;
+  }
+}
+
+.uibutton-toolbar {
+  padding: 6px;
+  border-top: 1px solid #ccc;
+  background: #f2f2f2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_fb-buttons\.scss;
+  }
+
+  line {
+    font-family: \00003219;
+  }
+}
+
+.uibutton-toolbar .uibutton,
+.uibutton-toolbar .uibutton-group {
+  vertical-align: bottom;
+}
+
+/***** HEADER ******/
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \000033;
+  }
+}
+
+.topbar {
+  background: 0px 0px url("../images/bg-topbar.png") repeat-x transparent;
+  height: 45px;
+  box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+.topbar .logo-gestao {
+  background: top left url("../images/logo-gestao_urbana.png") no-repeat transparent;
+  width: 206px;
+  height: 22px;
+  text-indent: -9999px;
+  display: inline-block;
+  margin: 13px 15px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000320;
+  }
+}
+
+.topbar .voltar-gestao {
+  background: 50% 50% url("../images/seta-voltar.png") no-repeat transparent;
+  text-indent: -9999px;
+  width: 20px;
+  height: 16px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-width: 0 2px;
+  margin: 0px;
+  padding: 15px 15px 14px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000332;
+  }
+}
+
+.topbar p {
+  color: #d7322f;
+  display: inline-block;
+  padding: 15px 15px 0 15px;
+  margin: 0;
+  font-family: "museoSlab", sans-serif;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000341;
+  }
+}
+
+.topbar .socialbar {
+  display: inline-block;
+  margin: 11px 0 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000344;
+  }
+}
+
+.topbar .socialbar .pure-u-1-3 {
+  text-align: center;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000348;
+  }
+}
+
+.topbar .socialbar .twitter-share-button {
+  margin: 0 15px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000354;
+  }
+}
+
+.menubar {
+  height: 45px;
+  background-color: #d7322f;
+  z-index: 1;
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000360;
+  }
+}
+
+.menubar ul {
+  text-align: right;
+  width: 49%;
+  padding: 0;
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000366;
+  }
+}
+
+.menubar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 25px 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000370;
+  }
+}
+
+.menubar ul li a {
+  opacity: .5;
+  font-family: "museoSlab", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000377;
+  }
+}
+
+.menubar ul li a:hover,
+.menubar ul li a.active {
+  opacity: 1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000382;
+  }
+}
+
+.menubar ul.primary {
+  text-align: left;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000384;
+  }
+}
+
+.menubar ul.primary li {
+  margin: 0 0 0 25px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_header\.scss;
+  }
+
+  line {
+    font-family: \0000386;
+  }
+}
+
+.menubar ul.primary li a {
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_content\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.content {
+  padding: 40px 30px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_content\.scss;
+  }
+
+  line {
+    font-family: \000034;
+  }
+}
+
+.content h1 {
+  margin: 0;
+  font-family: 'museoSlab';
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_content\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.content .comments-bar {
+  border-top: 3px solid #f0f0f0;
+  border-bottom: 3px solid #f0f0f0;
+  padding: 5px 0;
+  margin: 25px 0 15px 0;
+  color: #d7322f;
+  font-size: 80%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_content\.scss;
+  }
+
+  line {
+    font-family: \0000323;
+  }
+}
+
+.content .main-text p {
+  line-height: 1.3em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_content\.scss;
+  }
+
+  line {
+    font-family: \0000326;
+  }
+}
+
+.content .main-text .mapa,
+.content .main-text .quadro {
+  background-color: #ccf5ff;
+  text-decoration: none;
+  color: #231f20;
+  padding: 0 3px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_content\.scss;
+  }
+
+  line {
+    font-family: \0000331;
+  }
+}
+
+.content .main-text .mapa i,
+.content .main-text .quadro i {
+  background-color: #fff;
+  color: #d7322f;
+  font-size: 120%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.content .comment-pp {
+  margin: 0 0 10px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \000033;
+  }
+}
+
+.content .comment-pp.active .comment-text {
+  background-color: #ffffcc;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \000036;
+  }
+}
+
+.content .comment-pp p.comment-text {
+  display: inline;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \000038;
+  }
+}
+
+.content .comment-pp p.comment-text:hover {
+  background-color: #ffffcc;
+  cursor: pointer;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.content .comment-pp p.comment-text a {
+  margin: 0 0 0 5px;
+  font-size: 120%;
+  background-color: #fff;
+  color: #d7322f;
+  text-decoration: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000313;
+  }
+}
+
+.content .comment-pp p.comment-text a i {
+  margin: 0 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000324;
+  }
+}
+
+.content .comment-form {
+  display: none;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin: 15px 0;
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000331;
+  }
+}
+
+.content .comment-form h6 {
+  position: relative;
+  background: #d7322f;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px 5px 0 0;
+  font-family: 'museoSlab', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000344;
+  }
+}
+
+.content .comment-form h6 i {
+  margin: 0 10px 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000348;
+  }
+}
+
+.content .comment-form h6:after {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000358;
+  }
+}
+
+.content .comment-form h6:after {
+  border-color: rgba(215, 50, 47, 0);
+  border-bottom-color: #d7322f;
+  border-width: 8px;
+  left: 5%;
+  margin-left: -8px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000367;
+  }
+}
+
+.content .comment-form .message,
+.content .comment-form .loading {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000371;
+  }
+}
+
+.content .comment-form form > ol {
+  margin: 0;
+  padding: 25px 25px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000374;
+  }
+}
+
+.content .comment-form form > ol > li {
+  list-style: none;
+  padding: 0 0 25px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000379;
+  }
+}
+
+.content .comment-form form > ol > li.contribContainer,
+.content .comment-form form > ol > li.agreed {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000384;
+  }
+}
+
+.content .comment-form form > ol > li.agreed ol li label {
+  color: #666;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000389;
+  }
+}
+
+.content .comment-form form > ol > li label {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000394;
+  }
+}
+
+.content .comment-form form > ol > li .minict_wrapper {
+  width: 350px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \0000397;
+  }
+}
+
+.content .comment-form form > ol > li .minict_wrapper input,
+.content .comment-form form > ol > li .minict_wrapper ul li {
+  font-size: 90%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \00003102;
+  }
+}
+
+.content .comment-form form > ol > li textarea {
+  width: 100%;
+  height: 100px;
+  border: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \00003106;
+  }
+}
+
+.content .comment-form form > ol > li textarea.new_text {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \00003111;
+  }
+}
+
+.content .comment-form form > ol > li ol {
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \00003114;
+  }
+}
+
+.content .comment-form form > ol > li ol li {
+  list-style: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \00003119;
+  }
+}
+
+.content .comment-form form > ol > li .send-comment,
+.content .comment-form form > ol > li .cancel-comment {
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \00003124;
+  }
+}
+
+.content .comment-form form > ol > li .send-comment i,
+.content .comment-form form > ol > li .cancel-comment i {
+  margin: 0 10px 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \00003129;
+  }
+}
+
+.content .comment-form form > ol > li .send-comment {
+  color: #d7322f;
+  float: right;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_comments\.scss;
+  }
+
+  line {
+    font-family: \00003133;
+  }
+}
+
+.content .comment-form form > ol > li .cancel-comment {
+  color: #666;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.sidebar {
+  background-color: #e4e2e2;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \000034;
+  }
+}
+
+.sidebar .sidebox {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.5);
+  margin: 15px 15px 0 15px;
+  padding: 10px 0 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000311;
+  }
+}
+
+.sidebar .sidebox h2 {
+  vertical-align: top;
+  margin: 0;
+  padding: 5px 5px 0;
+  color: #fff;
+  background-color: #d7322f;
+  line-height: 24px;
+  font-size: 100%;
+  font-family: 'museoSlab';
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+.sidebar .sidebox h2 i {
+  line-height: 24px;
+  font-size: 24px;
+  margin: 0 8px 0 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000330;
+  }
+}
+
+.sidebar .sidebox .text-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  min-height: 60px;
+  max-height: 260px;
+  margin: 25px 25px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000331;
+  }
+}
+
+.sidebar .sidebox .text-content #loading {
+  height: 60px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000339;
+  }
+}
+
+.sidebar .sidebox .text-content p {
+  margin: 0 0 10px 0;
+  font-size: 90%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000345;
+  }
+}
+
+.sidebar .sidebox .related-content {
+  padding: 10px 25px 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000347;
+  }
+}
+
+.sidebar .sidebox .related-content p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 21px;
+  vertical-align: top;
+  font-family: 'museoSlab';
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000355;
+  }
+}
+
+.sidebar .sidebox .related-content p a {
+  color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+  margin: 0 0 0 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000362;
+  }
+}
+
+.sidebar .sidebox .related-content p a:hover {
+  color: #d7322f;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000366;
+  }
+}
+
+.sidebar .sidebox .related-content p a i {
+  font-size: 20px;
+  margin: 0 5px 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000374;
+  }
+}
+
+.sidebar .sidebox.sub-featured {
+  background-color: #fff;
+  padding: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000377;
+  }
+}
+
+.sidebar .sidebox.sub-featured h2 {
+  border-radius: 5px 5px 0 0;
+  background-color: #fff;
+  color: #d7322f;
+  border-bottom: 3px solid #f0f0f0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000383;
+  }
+}
+
+.sidebar .sidebox.sub-featured .text-content {
+  padding: 10px 15px 0 25px;
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000389;
+  }
+}
+
+.sidebar .sidebox.comments {
+  height: 600px;
+  overflow-y: scroll;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000392;
+  }
+}
+
+.sidebar .sidebox.comments #commentContainer {
+  display: inline-block;
+  height: 500px;
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \0000397;
+  }
+}
+
+.sidebar .sidebox.comments .comment {
+  border-bottom: 3px solid #fff;
+  padding-bottom: 15px;
+  margin: 25px 25px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \00003101;
+  }
+}
+
+.sidebar .sidebox.comments .comment p {
+  margin: 0 0 10px 0;
+  font-size: 90%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \00003105;
+  }
+}
+
+.sidebar .sidebox.comments .comment p.datetime {
+  font-size: 80%;
+  font-family: 'museoSlab', sans-serif;
+  margin: 0 0 5px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \00003110;
+  }
+}
+
+.sidebar .sidebox.comments .comment p.author {
+  font-size: 110%;
+  font-family: 'museoSlab', sans-serif;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \00003115;
+  }
+}
+
+.sidebar .sidebox.comments .comment p i {
+  background-color: #fff;
+  color: #d7322f;
+  border-radius: 50px;
+  font-size: 150%;
+  padding: 5px;
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \00003128;
+  }
+}
+
+.sidebar .sidebox.comments .comment .read-more,
+.sidebar .sidebox.comments .comment .read-less,
+.sidebar .sidebox.comments .comment .read-more a,
+.sidebar .sidebox.comments .comment .read-less a {
+  text-decoration: none;
+  color: #666;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_sidebar\.scss;
+  }
+
+  line {
+    font-family: \00003131;
+  }
+}
+
+.sidebar .sidebox.comments .comment .read-more:hover,
+.sidebar .sidebox.comments .comment .read-less:hover,
+.sidebar .sidebox.comments .comment .read-more a:hover,
+.sidebar .sidebox.comments .comment .read-less a:hover {
+  text-decoration: underline;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+#modal-content-box {
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \000036;
+  }
+}
+
+#modal-content-box .titlebar {
+  background-color: #d7322f;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \000038;
+  }
+}
+
+#modal-content-box .titlebar h2 {
+  color: #fff;
+  font-family: museoSlab;
+  padding: 0 0 0 25px;
+  margin: 0;
+  display: inline-block;
+  width: 70%;
+  font-weight: normal;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000317;
+  }
+}
+
+#modal-content-box .titlebar ul {
+  display: inline-block;
+  width: 25%;
+  text-align: right;
+  padding: 13px 0;
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000323;
+  }
+}
+
+#modal-content-box .titlebar ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 0 0 15px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000327;
+  }
+}
+
+#modal-content-box .titlebar ul li a {
+  font-family: museoSlab;
+  opacity: .5;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000332;
+  }
+}
+
+#modal-content-box .titlebar ul li a i {
+  margin: 0 5px 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000336;
+  }
+}
+
+#modal-content-box .titlebar ul li a:hover {
+  opacity: 1;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000344;
+  }
+}
+
+#modal-content-box .image-content {
+  background-color: transparent;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000348;
+  }
+}
+
+#modal-content-box .sidebar {
+  background-color: transparent;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000351;
+  }
+}
+
+#modal-content-box .sidebar .sidebox h2 {
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000354;
+  }
+}
+
+#modal-content-box .sidebar .sidebox h2:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000364;
+  }
+}
+
+#modal-content-box .sidebar .sidebox h2:after {
+  border-color: rgba(215, 50, 47, 0);
+  border-right-color: #d7322f;
+  border-width: 10px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000372;
+  }
+}
+
+#modal-content-box .sidebar .sidebox #respond {
+  margin: 25px 25px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000373;
+  }
+}
+
+#modal-content-box .sidebar .sidebox #respond h3 {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000376;
+  }
+}
+
+#modal-content-box .sidebar .sidebox #respond .must-log-in {
+  margin: 0 0 25px 0;
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000381;
+  }
+}
+
+#modal-content-box .sidebar .sidebox #respond .comment-form-comment {
+  margin: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000383;
+  }
+}
+
+#modal-content-box .sidebar .sidebox #respond .comment-form-comment label {
+  margin: 0 0 10px 0;
+  display: block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000389;
+  }
+}
+
+#modal-content-box .sidebar .sidebox #respond .send-comment,
+#modal-content-box .sidebar .sidebox #respond .cancel-comment {
+  display: inline-block;
+  margin: 20px 0 20px 190px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000394;
+  }
+}
+
+#modal-content-box .sidebar .sidebox #respond .send-comment i,
+#modal-content-box .sidebar .sidebox #respond .cancel-comment i {
+  margin: 0 10px 0 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \0000399;
+  }
+}
+
+#modal-content-box .sidebar .sidebox #respond .send-comment {
+  color: #d7322f;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \00003102;
+  }
+}
+
+#modal-content-box .sidebar .sidebox #respond .cancel-comment {
+  color: #666;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_related-content\.scss;
+  }
+
+  line {
+    font-family: \00003105;
+  }
+}
+
+#modal-content-box .sidebar .sidebox #respond .form-submit {
+  display: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+.introjs-overlay {
+  position: absolute;
+  z-index: 999999;
+  background-color: #000;
+  opacity: 0;
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.9)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%);
+  background: radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000',endColorstr='#e6000000',GradientType=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -webkit-filter: alpha(opacity=50);
+  filter: alpha(opacity=50);
+  -webkit-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \0000322;
+  }
+}
+
+.introjs-fixParent {
+  z-index: auto !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \0000326;
+  }
+}
+
+.introjs-showElement {
+  z-index: 9999999 !important;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \0000330;
+  }
+}
+
+.introjs-relativePosition {
+  position: relative;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \0000334;
+  }
+}
+
+.introjs-helperLayer {
+  position: absolute;
+  z-index: 9999998;
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #777;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \0000350;
+  }
+}
+
+.introjs-helperNumberLayer {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  z-index: 9999999999 !important;
+  padding: 2px;
+  font-family: Arial, verdana, tahoma;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  background: #ff3019;
+  /* Old browsers */
+  background: -webkit-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019), color-stop(100%, #cf0404));
+  /* Chrome,Safari4+ */
+  /* FF3.6+ */
+  background: -ms-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+  /* IE10+ */
+  /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #ff3019 0%, #cf0404 100%);
+  /* W3C */
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border: 3px solid white;
+  border-radius: 50%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(direction=135, strength=2, color=ff0000);
+  /* IE10 text shadows */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \0000379;
+  }
+}
+
+.introjs-arrow {
+  border: 5px solid white;
+  content: '';
+  position: absolute;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \0000384;
+  }
+}
+
+.introjs-arrow.top {
+  top: -10px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: white;
+  border-left-color: transparent;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \0000391;
+  }
+}
+
+.introjs-arrow.right {
+  right: -10px;
+  top: 10px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: white;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \0000399;
+  }
+}
+
+.introjs-arrow.bottom {
+  bottom: -10px;
+  border-top-color: white;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \00003106;
+  }
+}
+
+.introjs-arrow.left {
+  left: -10px;
+  top: 10px;
+  border-top-color: transparent;
+  border-right-color: white;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \00003115;
+  }
+}
+
+.introjs-tooltip {
+  position: absolute;
+  padding: 10px;
+  background-color: white;
+  min-width: 200px;
+  max-width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition: opacity 0.1s ease-out;
+  -ms-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \00003130;
+  }
+}
+
+.introjs-tooltipbuttons {
+  text-align: right;
+}
+
+/*
+ Buttons style by http://nicolasgallagher.com/lab/css3-github-buttons/
+ Changed by Afshin Mehrabani
+*/
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \00003138;
+  }
+}
+
+.introjs-button {
+  position: relative;
+  overflow: visible;
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  border: 1px solid #d4d4d4;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+  font: 11px/normal sans-serif;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  background-color: #ececec;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+  background-image: -webkit-linear-gradient(#f4f4f4, #ececec);
+  background-image: linear-gradient(#f4f4f4, #ececec);
+  /*background-clip: padding-box;*/
+  /* commented out due to Opera 11.10 bug */
+  border-radius: 0.2em;
+  /* IE hacks */
+  zoom: 1;
+  *display: inline;
+  margin-top: 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \00003170;
+  }
+}
+
+.introjs-button:hover {
+  border-color: #bcbcbc;
+  text-decoration: none;
+  box-shadow: 0px 1px 1px #e3e3e3;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \00003177;
+  }
+}
+
+.introjs-button:focus,
+.introjs-button:active {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ececec), to(#f4f4f4));
+  background-image: -webkit-linear-gradient(#ececec, #f4f4f4);
+  background-image: linear-gradient(#ececec, #f4f4f4);
+}
+
+/* overrides extra padding on button elements in Firefox */
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \00003185;
+  }
+}
+
+.introjs-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \00003190;
+  }
+}
+
+.introjs-skipbutton {
+  margin-right: 5px;
+  color: #7a7a7a;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \00003195;
+  }
+}
+
+.introjs-prevbutton {
+  border-radius: 0.2em 0 0 0.2em;
+  border-right: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \00003202;
+  }
+}
+
+.introjs-nextbutton {
+  border-radius: 0 0.2em 0.2em 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/lucaspirola\/Sites\/minuta\.gestao\/wp-content\/themes\/minuta-gestaourbana\/assets\/styles\/_intro\.scss;
+  }
+
+  line {
+    font-family: \00003208;
+  }
+}
+
+.introjs-disabled,
+.introjs-disabled:hover,
+.introjs-disabled:focus {
+  color: #9a9a9a;
+  border-color: #d4d4d4;
+  box-shadow: none;
+  cursor: default;
+  background-color: #f4f4f4;
+  background-image: none;
+  text-decoration: none;
+}
