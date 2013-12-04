@@ -1,0 +1,396 @@
+# Copyright (C) 2012 User Registration Aide
+# This file is distributed under the same license as the User Registration Aide package.
+msgid ""
+msgstr ""
+"Project-Id-Version: User Registration Aide 1.2.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/user-registration-aide\n"
+"POT-Creation-Date: 2012-09-11 18:10:04+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: user-reg-aide-admin.php:139
+msgid "Registration Form New Required Field Options updated successfully."
+msgstr ""
+
+#: user-reg-aide-admin.php:141 user-reg-aide-admin.php:225
+#: user-reg-aide-newFields.php:108 user-reg-aide-newFields.php:177
+msgid ""
+"You do not have adequate permissions to edit this plugin! Please check with "
+"Administrator to get additional permissions."
+msgstr ""
+
+#: user-reg-aide-admin.php:238 user-reg-aide-newFields.php:184
+msgid "Support Options updated successfully."
+msgstr ""
+
+#: user-reg-aide-admin.php:283 user-reg-aide-regForm.php:126
+msgid "User Registration Aide: Force New User Registration Fields"
+msgstr ""
+
+#: user-reg-aide-admin.php:289
+msgid "Add Additional Fields to Registration Form"
+msgstr ""
+
+#: user-reg-aide-admin.php:291
+msgid ""
+"By default, Wordpress will only require an email address and username to "
+"register an account. Here, you can select additional fields required for "
+"registration."
+msgstr ""
+
+#: user-reg-aide-admin.php:340
+msgid "Hold \"Ctrl\" to select multiple options"
+msgstr ""
+
+#: user-reg-aide-admin.php:342
+msgid "Select None"
+msgstr ""
+
+#: user-reg-aide-admin.php:343
+msgid "Update Options"
+msgstr ""
+
+#: user-reg-aide-admin.php:350
+msgid "Add New Field"
+msgstr ""
+
+#: user-reg-aide-admin.php:355
+msgid "Field Key Name : "
+msgstr ""
+
+#: user-reg-aide-admin.php:357
+msgid "Field Name : "
+msgstr ""
+
+#: user-reg-aide-admin.php:362
+msgid "Add Field"
+msgstr ""
+
+#: user-reg-aide-admin.php:371 user-reg-aide-newFields.php:302
+msgid "Show Plugin Support: "
+msgstr ""
+
+#: user-reg-aide-admin.php:379 user-reg-aide-newFields.php:310
+msgid "Plugin Configuration Help"
+msgstr ""
+
+#: user-reg-aide-admin.php:383 user-reg-aide-newFields.php:314
+msgid "Check Official Website"
+msgstr ""
+
+#: user-reg-aide-newFields.php:85
+msgid ""
+"No field was selected for deletion, you must select a field to delete first!"
+msgstr ""
+
+#: user-reg-aide-newFields.php:139
+msgid ""
+"Error Updating New Field Order Options, two or more fields have the same "
+"order!"
+msgstr ""
+
+#: user-reg-aide-newFields.php:175
+msgid "New Field Order Options updated successfully."
+msgstr ""
+
+#: user-reg-aide-newFields.php:205
+msgid ""
+"No new fields have been created, please go to the main page to add some new "
+"fields first before you try and edit them! "
+msgstr ""
+
+#: user-reg-aide-newFields.php:214
+msgid "User Registration Aide: Edit New Fields"
+msgstr ""
+
+#: user-reg-aide-newFields.php:220
+msgid "Edit Additional Fields for Profile &  Registration Form: Delete Field"
+msgstr ""
+
+#: user-reg-aide-newFields.php:224
+msgid ""
+"Here you can select the new additional fields you added that you want to "
+"delete."
+msgstr ""
+
+#: user-reg-aide-newFields.php:239
+msgid "Delete New Field"
+msgstr ""
+
+#: user-reg-aide-newFields.php:246
+msgid "Edit New Field Order"
+msgstr ""
+
+#: user-reg-aide-newFields.php:250
+msgid ""
+"Here you can select or change the order for the new additional fields on the "
+"registration form and profile. You must not have the same number twice, so "
+"make sure you change all fields accordingly so there are no duplicates or "
+"you will generate an error!"
+msgstr ""
+
+#: user-reg-aide-newFields.php:265
+msgid "Additional New Field Name: "
+msgstr ""
+
+#: user-reg-aide-newFields.php:266
+msgid "Current Field Order: "
+msgstr ""
+
+#: user-reg-aide-newFields.php:292
+msgid "Update Field Order"
+msgstr ""
+
+#: user-reg-aide-regForm.php:66
+msgid "New Registration Form Message Options updated successfully."
+msgstr ""
+
+#: user-reg-aide-regForm.php:78
+msgid "New Registration Form Agreement Message Options updated successfully."
+msgstr ""
+
+#: user-reg-aide-regForm.php:98
+msgid "New Registration Form Logo Options updated successfully."
+msgstr ""
+
+#: user-reg-aide-regForm.php:132
+msgid "Add Your Own Message to Bottom of Registration Form"
+msgstr ""
+
+#: user-reg-aide-regForm.php:137
+msgid ""
+"Choose to add a special message to bottom of registration form if new users "
+"can enter own password:"
+msgstr ""
+
+#: user-reg-aide-regForm.php:143
+msgid "Enter new Registration form message below: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:146 user-reg-aide-regForm.php:184
+msgid ""
+"Enter a custom message here for bottom of registration form if users can "
+"create their own password!"
+msgstr ""
+
+#: user-reg-aide-regForm.php:150
+msgid "Update Registration Form Message Options"
+msgstr ""
+
+#: user-reg-aide-regForm.php:156
+msgid ""
+"Add Your Own Agreement Message and Policy Link with Confirmation of "
+"Agreement to Bottom of Registration Form"
+msgstr ""
+
+#: user-reg-aide-regForm.php:160
+msgid ""
+"Choose to add a special message to bottom of registration form for new users "
+"requiring them to read and agree to terms and conditions of the website:"
+msgstr ""
+
+#: user-reg-aide-regForm.php:163
+msgid "Show Custom Link for Agreement/Guidelines/Policy Page: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:168
+msgid ""
+"Enter a title to display for link to Agreement/Guidelines/Policies URL: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:169
+msgid "Enter Link to Agreement/Guidelines/Policies URL: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:171
+msgid ""
+"Show Message Confirming Agreement for Agreement/Guidelines/Policy Page: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:176
+msgid ""
+"Show Checkbox Confirming Agreement for Agreement/Guidelines/Policy Page: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:181
+msgid ""
+"Add your special message below to add to bottom of registration form if new "
+"users must agree to terms or policies:"
+msgstr ""
+
+#: user-reg-aide-regForm.php:187
+msgid "Update Registration Form Agreement Options"
+msgstr ""
+
+#: user-reg-aide-regForm.php:192
+msgid "Add Your Own Logo"
+msgstr ""
+
+#: user-reg-aide-regForm.php:199
+msgid "Show Custom Logo: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:205
+msgid "Change Custom Logo Link: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:211
+msgid "New Logo URL: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:218
+msgid "Show Custom Background Image: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:226
+msgid "New Background Image URL: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:233
+msgid "Show Custom Page Background Image: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:237
+msgid "New Page Background Image: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:243
+msgid "Show Custom Background Color: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:247
+msgid "New Background Color: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:255
+msgid "Show Custom Page Background Color: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:259
+msgid "New Page Background Color: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:264
+msgid "Show Custom Text/Links Colors: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:268
+msgid "New Text/Links Color: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:269
+msgid "New Links Hover Color: "
+msgstr ""
+
+#: user-reg-aide-regForm.php:274
+msgid "Add Logo"
+msgstr ""
+
+#: user-registration-aide.php:498
+msgid "Password:"
+msgstr ""
+
+#: user-registration-aide.php:501
+msgid "Confirm Password:"
+msgstr ""
+
+#: user-registration-aide.php:505
+msgid ""
+"Hint: Use upper and lower case characters, numbers and symbols like !\"?$"
+"%^&amp;( in your password."
+msgstr ""
+
+#: user-registration-aide.php:521
+msgid "I Agree with the Terms and Conditions: "
+msgstr ""
+
+#: user-registration-aide.php:738
+msgid "Failed Security Verification"
+msgstr ""
+
+#: user-registration-aide.php:774
+msgid "A new user has registered on your site %s:"
+msgstr ""
+
+#: user-registration-aide.php:775 user-registration-aide.php:786
+msgid "Username: %s"
+msgstr ""
+
+#: user-registration-aide.php:776
+msgid "E-mail: %s"
+msgstr ""
+
+#: user-registration-aide.php:778
+msgid "[%s] New User Registration Alert"
+msgstr ""
+
+#: user-registration-aide.php:785
+msgid "Thank you for registering with: %s"
+msgstr ""
+
+#: user-registration-aide.php:787
+msgid "Password: %s"
+msgstr ""
+
+#: user-registration-aide.php:790
+msgid "[%s] Your username and password"
+msgstr ""
+
+#: user-registration-aide.php:828
+msgid "<strong>ERROR</strong>:  Passwords do not match!"
+msgstr ""
+
+#: user-registration-aide.php:831
+msgid "<strong>ERROR</strong>: Password too short!"
+msgstr ""
+
+#: user-registration-aide.php:841
+msgid "<strong>ERROR</strong>: You must agree to the terms and conditions!"
+msgstr ""
+
+#: user-registration-aide.php:892
+msgid "Naughty, Naughty! You do not havve permissions to do this!"
+msgstr ""
+
+#: user-registration-aide.php:929
+msgid "Failed Security Check"
+msgstr ""
+
+#: user-registration-aide.php:932
+msgid ""
+"You do not have sufficient permissions to edit this user, contact a network "
+"administrator if this is an error!"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "User Registration Aide"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"http://creative-software-design-solutions.com/wordpress-user-registration-"
+"aide-force-add-new-user-fields-on-registration-form/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Forces new users to register additional fields with the option to add "
+"additional fields other than those supplied with the default Wordpress "
+"Installation. We have kept it simple in this version for those of you whom "
+"aren't familiar with handling multiple users or websites. We also are "
+"currently working on expanding this project with a paid version which will "
+"contain alot more features and options for those of you who wish to get more "
+"control over users and user access to your site."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Brian Novotny"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://creative-software-design-solutions.com/"
+msgstr ""

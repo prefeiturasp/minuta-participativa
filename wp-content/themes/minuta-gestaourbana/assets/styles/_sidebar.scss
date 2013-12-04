@@ -1,0 +1,138 @@
+.sidebar {
+    background-color: #e4e2e2;
+
+    .sidebox {
+        background-color: $secondary-color;
+        border-radius: 5px;
+        box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, .5);
+        margin: 15px 15px 0 15px;
+        padding: 10px 0 0 0 ;
+
+        h2 {
+            i {
+                    line-height: 24px;
+                    font-size: 24px;
+                    margin: 0 8px 0 5px;
+                }
+                vertical-align: top;
+                margin: 0;
+                padding: 5px 5px 0;
+                color: #fff;
+                background-color: $primary-color;
+                line-height: 24px;
+                font-size: 100%;
+                font-family: 'museoSlab';
+                font-weight: normal;
+                text-transform: uppercase;
+        }
+
+
+        .text-content {
+            #loading {
+                height: 60px;
+            }
+            overflow-y: scroll;
+            overflow-x: hidden;
+            min-height: 60px;
+            max-height: 260px;
+            margin: 25px 25px 0;
+            p {
+                margin: 0 0 10px 0;
+                font-size: 90%;
+            }
+        }
+
+        .related-content {
+            padding: 10px 25px 5px;
+            p {
+                margin: 0;
+                text-transform: uppercase;
+                font-size:12px;
+                line-height: 21px;
+                vertical-align: top;
+                font-family: 'museoSlab';
+
+                a {
+                    color: #666;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    vertical-align: top;
+                    margin: 0 0 0 5px;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+
+                    i {
+                        font-size: 20px;
+                        margin: 0 5px 0 0 ;
+                    }
+                }
+            }
+        }
+
+        &.sub-featured {
+            background-color: #fff;
+            padding: 0;
+            h2 {
+                border-radius: 5px 5px 0 0;
+                background-color: #fff;
+                color: $primary-color;
+                border-bottom: 3px solid #f0f0f0;
+            }
+            .text-content {
+                padding: 10px 15px 0 25px;
+                margin:0;
+            }
+        }
+
+        &.comments {
+            height: 600px;
+            overflow-y: scroll;
+            #commentContainer {
+                display: inline-block;
+                height: 500px;
+                width: 100%;
+            }
+            .comment {
+                border-bottom: 3px solid #fff;
+                padding-bottom: 15px;
+                margin: 25px 25px 0;
+                p {
+                    margin: 0 0 10px 0;
+                    font-size: 90%;
+
+                    &.datetime {
+                        font-size: 80%;
+                        font-family: 'museoSlab', sans-serif;
+                        margin:0 0 5px 0;
+                    }
+                    &.author {
+                        font-size: 110%;
+                        font-family: 'museoSlab', sans-serif;
+                    }
+
+                    i {
+                        background-color: #fff;
+                        color: $primary-color;
+                        border-radius:50px;
+                        font-size:150%;
+                        padding: 5px;
+                        display: inline-block;
+                    }
+                }
+
+                .read-more,
+                .read-less,
+                .read-more a,
+                .read-less a {
+                    text-decoration: none;
+                    color: #666;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

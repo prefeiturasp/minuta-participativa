@@ -1,0 +1,7 @@
+#user_login {
+	display: none;
+}
+
+form#registerform>p:first-child {
+	display: none;
+}
