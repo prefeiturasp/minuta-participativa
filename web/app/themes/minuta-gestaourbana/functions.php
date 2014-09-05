@@ -96,7 +96,7 @@ function substr_to_next_white_space_or_message( $the_string, $length, $message )
 
 /* -- Wordpress default stuff -- */
 
-automatic_feed_links();
+add_theme_support( 'automatic-feed-links' );
 
 if (function_exists('register_sidebar')) {
   register_sidebar(array(

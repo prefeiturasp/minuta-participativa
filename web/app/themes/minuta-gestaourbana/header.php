@@ -17,7 +17,7 @@
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <script type="text/javascript">
-            window.blogUrl ='<?php bloginfo('home'); ?>';
+            window.blogUrl ='<?php bloginfo('url'); ?>';
             window.templateUrl = '<?php bloginfo('stylesheet_directory'); ?>';
         </script>
         <!-- build:css(.tmp) styles/main.css -->

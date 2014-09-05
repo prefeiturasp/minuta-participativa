@@ -60,8 +60,8 @@
                     <a href="<?php echo wp_logout_url(); ?>" title="Sair">Sair</a>
                 </li>
                 <?php else : ?>
-                <li><a class="register-button" href="<?php bloginfo('home'); ?>/wp-login.php?action=register">Cadastre-se</a></li>
-                <li><a class="login-button" href="<?php bloginfo('home'); ?>/wp-login.php">Login</a></li>
+                <li><a class="register-button" href="<?php bloginfo('url'); ?>/wp-login.php?action=register">Cadastre-se</a></li>
+                <li><a class="login-button" href="<?php bloginfo('url'); ?>/wp-login.php">Login</a></li>
                 <?php endif; ?>
             </ul>
         </div>
@@ -81,7 +81,7 @@
             <div class="sidebox sub-featured" data-intro="Aqui está o texto do PDE de 2002 para consulta. Assim fica fácil ver as diferenças entre a lei antiga e a nova." data-step="3" data-position="left">
                 <?php $pp = get_posts(array('post_type'=>'page', 'ID'=>2)); $pp = $pp[0]; ?>
                 <h2><i class="icon-book"></i><?php echo $pp->post_title; ?></h2>
-                <div class="text-content" data-url="<?php bloginfo('home'); ?>/minuta-antiga/">
+                <div class="text-content" data-url="<?php bloginfo('url'); ?>/minuta-antiga/">
                 <?php //echo ($pp->post_content); ?>
                 </div>
                 <div class="related-content">
