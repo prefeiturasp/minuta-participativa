@@ -1,0 +1,43 @@
+=== Dialogue Wordpress Plugin ===
+Contributors: Lincoln Sousa, Fabrício Soares
+Tags: public participation, Legislation, non-linear narratives
+Tested with: 2.9.2
+
+A plugin for displaying comments per paragraph.
+
+== Description ==
+
+Plugin that allows public and collaborative participation on
+the process of constructing text, developed by the Brazilian
+Ministry of Culture (Ministério da Cultura) for supporting
+the construction of a democratic debate evolving laws.
+
+== Installation ==
+
+1. Upload the `dialogue` folder to the `/wp-content/plugins/`
+directory
+1. Activate the plugin through the 'Plugins' menu in
+WordPress or by using the link provided by the plugin installer.
+
+== Usage ==
+
+1. Install.
+2. Activate.
+3. Enable dialogue on the post. Using the option "Enable dialogue
+   in this post"
+4. Mark the commentable areas with the [commentable][/commentable]
+See the example:
+
+  [commentable id="paragraph1"]
+  faucibus. Vestibulum pretium aliquet arcu, et lobortis massa varius
+  in. Ut porta mollis lorem et scelerisque. Fusce non ipsum at lorem
+  laoreet pulvinar. Quisque lacus risus, accumsan hendrerit ultrices
+  ut, congue vitae nisl. Pellentesque facilisis, magna sed
+  ullamcorper rutrum, lectus lectus egestas odio, consequat mollis
+  tellus est sed sem. Ut ligula elit, laoreet vel viverra nec,
+  interdum dignissim est.
+  [/commentable]
+
+Be careful with the id property. It is used to associate a comment
+with something we call a "paragraph". You can use any kind of text
+in this field but you have to make sure you will fill it.

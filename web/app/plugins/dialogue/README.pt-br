@@ -1,0 +1,41 @@
+=== Dialogue Wordpress Plugin ===
+Contributors: Lincoln Sousa, Fabrício Soares
+Tags: Participação Pública, Narrativas não-lineares
+Tested with: 2.9.2
+
+Um plugin para tornar pedaços de texto comentáveis.
+
+== Descrição ==
+
+Este plugin permite participação pública e colaborativa
+em textos e foi desenvolvido pelo Ministério da Cultura
+do Brasil para permitir o diálogo e o debate na construção
+democrática de leis.
+
+== Instalação ==
+
+1. Faça o upload da pasta "dialogue` para `/wp-content/plugins/`
+1. Ative o plugin através do menu "Plugins"
+
+== Utilização ==
+
+1. Instale
+2. Ative.
+3. Habilite o plugin no post, usando a opção "Enable dialogue
+   in this post"
+4. Marque as áreas comentáveis com [commentable][/commentable]
+  Veja o exemplo:
+
+  [commentable id="paragraph1"]
+  faucibus. Vestibulum pretium aliquet arcu, et lobortis massa varius
+  in. Ut porta mollis lorem et scelerisque. Fusce non ipsum at lorem
+  laoreet pulvinar. Quisque lacus risus, accumsan hendrerit ultrices
+  ut, congue vitae nisl. Pellentesque facilisis, magna sed
+  ullamcorper rutrum, lectus lectus egestas odio, consequat mollis
+  tellus est sed sem. Ut ligula elit, laoreet vel viverra nec,
+  interdum dignissim est.
+  [/commentable]
+
+Tenha cuidado com a propriedade "id", ela é usada para associar o
+comentário com algo que chamamos de "parágrafo". Você pode preencher
+esse campo com qualquer tipo de valor porém, não deixe de preenchê-lo. :D
