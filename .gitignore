@@ -1,7 +1,35 @@
-.DS_Store
-assets/node_modules
-assets/dist
-assets/.tmp
-assets/.sass-cache
-assets/bower_components
-base-de-propostas/vendor
+# WordPress
+web/wp
+web/.htaccess
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+!web/app/plugins/dialogue
+web/app/mu-plugins/*
+!web/app/mu-plugins/.gitkeep
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+!web/app/mu-plugins/disallow-indexing.php
+!web/app/mu-plugins/register-theme-directory.php
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
+
+# Node Package Manager
+node_modules
+
+# Vagrant
+bin
+.vagrant
